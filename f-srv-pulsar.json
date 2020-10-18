@@ -1,0 +1,292 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-pulsar",
+        "serviceName": "f-srv-pulsar",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-glnsnncuymqq6eb4"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-pulsar-api:5",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/8754968477387668794",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-pulsar-api:5",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T11:41:24.346000+05:30",
+                "updatedAt": "2020-10-18T13:47:56.733000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "78f5a7f2-583c-4049-b449-3b8ce250e450",
+                "createdAt": "2020-10-18T13:47:56.740000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "8b4005ab-6f84-4e4f-a00a-7edf65a7a38c",
+                "createdAt": "2020-10-18T13:47:44.785000+05:30",
+                "message": "(service f-srv-pulsar) has stopped 1 running tasks: (task cad7ccd2-1566-4a2d-93cd-13563dc3cc3d)."
+            },
+            {
+                "id": "c86897bc-d467-497d-9f4b-c73adae16b29",
+                "createdAt": "2020-10-18T11:44:16.283000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "d38f41fe-ce4d-4556-b572-cb636d9b85f5",
+                "createdAt": "2020-10-18T11:41:38.356000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task cad7ccd2-1566-4a2d-93cd-13563dc3cc3d)."
+            },
+            {
+                "id": "2eacb3a3-3e84-404f-9078-18ce718fb43c",
+                "createdAt": "2020-10-18T11:34:19.165000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "ebb28eba-a6ed-4dec-bbcd-e663f6a28471",
+                "createdAt": "2020-10-18T05:34:16.285000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "49e99ae7-c26d-4276-a7fc-e2b120d6b275",
+                "createdAt": "2020-10-17T23:34:01.801000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "fdc12f3e-b6a6-4e43-8568-8f88ca90b064",
+                "createdAt": "2020-10-17T23:33:51.213000+05:30",
+                "message": "(service f-srv-pulsar) has stopped 1 running tasks: (task e30fa07f-15c6-4f4c-beee-0ff04b11e04e)."
+            },
+            {
+                "id": "4fc20df5-eca6-47c9-9f14-39dfdc7e4388",
+                "createdAt": "2020-10-17T22:20:22.929000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "f64b9fb9-7ff6-41e2-aa59-dbee4d0d3587",
+                "createdAt": "2020-10-17T22:17:59.804000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task e30fa07f-15c6-4f4c-beee-0ff04b11e04e)."
+            },
+            {
+                "id": "415f432f-e676-4b39-b36f-4ec731152010",
+                "createdAt": "2020-10-17T22:17:59.540000+05:30",
+                "message": "(service f-srv-pulsar) stopped 1 pending tasks."
+            },
+            {
+                "id": "239a576f-0a92-415d-bb63-87e5f378d1e7",
+                "createdAt": "2020-10-17T22:16:10.822000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 87af7cc0-6a0f-4620-854e-4aceeeec3359)."
+            },
+            {
+                "id": "61c3179f-3727-47da-bba2-3093bd18c356",
+                "createdAt": "2020-10-17T22:15:40.146000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "c3588028-e474-4f56-912c-355282367c95",
+                "createdAt": "2020-10-17T22:13:51.618000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 8289a2c3-7723-49bb-add9-dda1280f7e4a)."
+            },
+            {
+                "id": "8661d576-6c63-40f4-a525-215a687d9f1e",
+                "createdAt": "2020-10-17T22:11:16.657000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 4c186881-3a35-498f-8cc8-bdff2db54375)."
+            },
+            {
+                "id": "0e03df36-2f96-4355-a9db-a3c2994bb875",
+                "createdAt": "2020-10-17T22:08:29.030000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 62182394-89e9-47ea-ac2c-57d2dff4a22e)."
+            },
+            {
+                "id": "481b911e-6479-4f8d-8342-e0de15349385",
+                "createdAt": "2020-10-17T22:07:57.948000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "d003e0d1-2574-4db5-9318-c2bba2db1cab",
+                "createdAt": "2020-10-17T22:06:13.335000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 4b9bb896-08c8-49f4-90a5-70481ff1a9d7)."
+            },
+            {
+                "id": "ab936e1c-acb3-411c-b41c-f9d9e3ac24ca",
+                "createdAt": "2020-10-17T22:03:13.912000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task d0a96cbf-7589-4ded-bae8-a13bf6b07b69)."
+            },
+            {
+                "id": "b693be19-9ddd-4f05-b651-bfd59bf038a4",
+                "createdAt": "2020-10-17T22:00:48.939000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 01fab6b3-39c8-41e7-a5ef-35b56518af38)."
+            },
+            {
+                "id": "ddb21a08-d703-4d42-92c1-c2e3bcdb8ec1",
+                "createdAt": "2020-10-17T21:58:01.944000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 9f3fed9a-78b9-4227-8331-8e89fc0d0394)."
+            },
+            {
+                "id": "d1f1ceaf-3582-4a55-8434-580b758bb400",
+                "createdAt": "2020-10-17T21:55:46.118000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 2bb13bfd-3533-4c15-837e-bbefa7a8efc2)."
+            },
+            {
+                "id": "ca6fecfd-79f0-4055-8d06-18dda9dc3aee",
+                "createdAt": "2020-10-17T21:55:15.770000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "70f9acdf-2a48-4ae3-873a-14d4fcd14e65",
+                "createdAt": "2020-10-17T21:53:20.799000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 09461a5f-67b3-4bc7-ab51-e7a5609eaa7c)."
+            },
+            {
+                "id": "39a81c3c-fbfb-4d11-9ff4-839bbd7a27d2",
+                "createdAt": "2020-10-17T20:47:22.821000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "2a4fa822-6de7-469b-b3d9-129fa71028b3",
+                "createdAt": "2020-10-17T20:46:46.413000+05:30",
+                "message": "(service f-srv-pulsar) stopped 1 pending tasks."
+            },
+            {
+                "id": "53fd5d5f-85c6-4e6b-b3da-8d1082a494ab",
+                "createdAt": "2020-10-17T20:45:27.188000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task b23c56f2-abc0-459b-b849-1f2f7b4afe00)."
+            },
+            {
+                "id": "a883c87a-ad6e-46b4-bf19-26a8bc51c4e2",
+                "createdAt": "2020-10-17T20:44:55.460000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "ce46956f-2484-41b6-821b-97fd2f64d098",
+                "createdAt": "2020-10-17T20:43:00.554000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task f297ee9d-c5fa-4231-92b6-86832e9356c0)."
+            },
+            {
+                "id": "24d0e712-3343-4bca-9560-f0b3bb9fc08f",
+                "createdAt": "2020-10-17T20:40:40.770000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task ce2956da-3fa2-40dd-bea6-5adaa9e61548)."
+            },
+            {
+                "id": "475e9dc7-226a-4d92-8c5c-893d7e1eca8e",
+                "createdAt": "2020-10-17T20:40:10.418000+05:30",
+                "message": "(service f-srv-pulsar) has reached a steady state."
+            },
+            {
+                "id": "8a76f92d-9977-4f43-9b6c-91381005cd91",
+                "createdAt": "2020-10-17T20:38:20.755000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task c6388a03-1baa-43fe-8f1b-17435d97772f)."
+            },
+            {
+                "id": "c8e1a013-d645-44d4-a69b-a95928612e34",
+                "createdAt": "2020-10-17T20:35:56.240000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task e8fd6aff-71ba-42d3-bf7c-95bab853f720)."
+            },
+            {
+                "id": "0a15d9a8-66b7-4888-82ac-bce1f4132c2d",
+                "createdAt": "2020-10-17T20:33:20.979000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 7fb962d9-9edf-42f1-8a2e-12f19eb641cb)."
+            },
+            {
+                "id": "b18178d9-155d-471e-94ae-eb7437aa1f0d",
+                "createdAt": "2020-10-17T20:30:49.484000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 35ccd1b9-2c6a-4166-a6d4-d7271f56ba97)."
+            },
+            {
+                "id": "be1cd186-a9d7-4133-b523-ac7c76872cbf",
+                "createdAt": "2020-10-17T20:28:12.086000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task e29b38d2-88a7-442f-986d-d3dda0f087bb)."
+            },
+            {
+                "id": "080f9faf-5ffc-4225-b10d-e2e7304ceb5b",
+                "createdAt": "2020-10-17T20:25:42.275000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 1d77ea39-2df7-429c-80bb-3ed8ab63eba8)."
+            },
+            {
+                "id": "774b31d5-6f34-4d08-93f8-3862eeeffa0c",
+                "createdAt": "2020-10-17T20:22:55.128000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 0efa8fb1-b5ec-4c3b-a097-4016e4282c98)."
+            },
+            {
+                "id": "233e5b7f-dbc3-4514-bffa-9fcd087a38cb",
+                "createdAt": "2020-10-17T20:20:09.797000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 3426fc9e-5e72-4719-8334-539400901afd)."
+            },
+            {
+                "id": "3f90e16a-9f34-419c-bb9a-927381c77412",
+                "createdAt": "2020-10-17T20:18:07.260000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task b0d6fe50-921d-458a-a7b6-4a1ea2e9158e)."
+            },
+            {
+                "id": "2684fe80-9886-4975-84fe-8914f9e8413b",
+                "createdAt": "2020-10-17T20:15:51.762000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task a8547785-9391-4c54-9c4c-9545c32c5575)."
+            },
+            {
+                "id": "e35abe39-c0b2-4cb9-8588-7422b815069d",
+                "createdAt": "2020-10-17T20:13:17.197000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 9d434073-32d6-485d-b765-d414bd169b56)."
+            },
+            {
+                "id": "fc87a915-aaa9-4e7a-951d-1f7f3bd1d3bc",
+                "createdAt": "2020-10-17T20:10:51.472000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task 8c1ffcd8-f2b7-4160-a6e7-c220cf6cdb20)."
+            },
+            {
+                "id": "12e57234-238f-4fef-82c1-b2c5a3e2526d",
+                "createdAt": "2020-10-17T20:08:10.689000+05:30",
+                "message": "(service f-srv-pulsar) has started 1 tasks: (task ea92cb15-123b-456d-8070-06976b2b56de)."
+            }
+        ],
+        "createdAt": "2020-10-17T20:08:06.336000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

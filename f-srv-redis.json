@@ -1,0 +1,97 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-redis",
+        "serviceName": "f-srv-redis",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-cnzomh3tpc7gsqt6"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:2",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/1198929388740157047",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:2",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T11:34:37.100000+05:30",
+                "updatedAt": "2020-10-18T13:47:38.998000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "a016fdcb-2ce1-4a8f-8562-2598cf734255",
+                "createdAt": "2020-10-18T13:40:16.461000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "6bc1133a-18a7-4d83-93b5-c2cb166f5c98",
+                "createdAt": "2020-10-18T13:40:07.147000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task d22e5561-3879-4f18-94bc-346a49dee38a)."
+            },
+            {
+                "id": "8ea65e2e-c3bb-4e54-bf72-e1cc1837e663",
+                "createdAt": "2020-10-18T11:36:30.329000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "aaa3af50-f745-42ed-9805-6bfda1415403",
+                "createdAt": "2020-10-18T11:34:54.068000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task d22e5561-3879-4f18-94bc-346a49dee38a)."
+            },
+            {
+                "id": "5fcad1bf-a34f-430c-a4b0-6f292247cad3",
+                "createdAt": "2020-10-18T11:26:04.179000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            }
+        ],
+        "createdAt": "2020-10-18T11:25:59.337000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

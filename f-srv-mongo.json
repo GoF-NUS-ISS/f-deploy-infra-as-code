@@ -1,0 +1,92 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-mongo",
+        "serviceName": "f-srv-mongo",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-upriug33f5vnjwpl"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-mongodb-api:2",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/1230847236619301526",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-mongodb-api:2",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T11:25:04.757000+05:30",
+                "updatedAt": "2020-10-18T13:47:59.098000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "b5519a27-28ca-4211-9c1f-a46084701790",
+                "createdAt": "2020-10-18T13:47:59.103000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "1eb50591-4b76-45be-9d4e-421cf1d77861",
+                "createdAt": "2020-10-18T13:47:47.347000+05:30",
+                "message": "(service f-srv-mongo) has stopped 1 running tasks: (task cb932469-b592-4b7e-9d9e-80d7432b1e37)."
+            },
+            {
+                "id": "3ab39295-e3e7-4ac8-af42-e7181fa4bb7d",
+                "createdAt": "2020-10-18T11:27:08.453000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "1917821d-ed4c-407a-8766-cc2a3bcaed5d",
+                "createdAt": "2020-10-18T11:25:15.017000+05:30",
+                "message": "(service f-srv-mongo) has started 1 tasks: (task cb932469-b592-4b7e-9d9e-80d7432b1e37)."
+            }
+        ],
+        "createdAt": "2020-10-18T11:25:04.757000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

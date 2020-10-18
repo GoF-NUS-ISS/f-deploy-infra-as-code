@@ -1,0 +1,412 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-travel-plan-api",
+        "serviceName": "f-srv-travel-plan-api",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-ojbcs2feq5y7ptni"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-api:7",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/6408313120401312112",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-api:7",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T11:45:01.746000+05:30",
+                "updatedAt": "2020-10-18T13:54:30.436000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "fb6d122d-8acd-4b35-a175-08bab062c3e6",
+                "createdAt": "2020-10-18T13:48:07.469000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "ae10da55-0380-4d04-8661-82e1ebc486af",
+                "createdAt": "2020-10-18T13:47:56.889000+05:30",
+                "message": "(service f-srv-travel-plan-api) has stopped 1 running tasks: (task 92c1f77d-4264-42f1-b96c-65ae7f9a6646)."
+            },
+            {
+                "id": "578ecd05-b5b6-405c-a12b-5e966d04e554",
+                "createdAt": "2020-10-18T11:47:19.908000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "8c996e5a-1e79-4099-b11c-e6d1ffa2a927",
+                "createdAt": "2020-10-18T11:45:20.587000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 92c1f77d-4264-42f1-b96c-65ae7f9a6646)."
+            },
+            {
+                "id": "8b97ec84-f78d-46e7-bd1d-e89a4da00feb",
+                "createdAt": "2020-10-18T11:37:57.019000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "2a13e35c-cc4e-46cb-a1b6-8863f7a0f1e7",
+                "createdAt": "2020-10-18T05:37:31.192000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "b189e54b-f360-4cd4-b99c-203def565bae",
+                "createdAt": "2020-10-17T23:37:00.376000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "e60a3ae7-d490-48eb-8c2f-1125ed7d6525",
+                "createdAt": "2020-10-17T23:36:47.775000+05:30",
+                "message": "(service f-srv-travel-plan-api) has stopped 1 running tasks: (task 16f1387c-753f-4de4-9396-47167ff7a6d0)."
+            },
+            {
+                "id": "eb5f5aad-b27e-4113-849c-a9e065872490",
+                "createdAt": "2020-10-17T22:32:15.540000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "380b7d4e-b240-4a39-8f90-7fab3bb4d216",
+                "createdAt": "2020-10-17T22:30:10.980000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 16f1387c-753f-4de4-9396-47167ff7a6d0)."
+            },
+            {
+                "id": "f80319e2-05cc-465c-81d1-622ed132f840",
+                "createdAt": "2020-10-17T20:50:44.188000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "fd0646e7-9df9-42c1-a60d-5d1c3c1a11f5",
+                "createdAt": "2020-10-17T20:50:08.023000+05:30",
+                "message": "(service f-srv-travel-plan-api) stopped 1 pending tasks."
+            },
+            {
+                "id": "50f90a45-87b9-46f6-8fcf-e16ff70381b1",
+                "createdAt": "2020-10-17T20:49:47.167000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 99ccc938-d4ea-4bc6-beea-4faa01bd215c)."
+            },
+            {
+                "id": "62caeddb-f853-4000-96ea-63cbe5163958",
+                "createdAt": "2020-10-17T20:47:40.574000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "0e9e00c3-5821-4bf7-8340-5efdd59503c0",
+                "createdAt": "2020-10-17T20:45:10.036000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 3b3d197e-28b1-43a3-aa22-0906f605041d)."
+            },
+            {
+                "id": "8c86faed-73fc-4b02-b9ea-ab5373889217",
+                "createdAt": "2020-10-17T20:44:04.555000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "d461119f-2f75-4690-8cd3-3bd0ac16e8f5",
+                "createdAt": "2020-10-17T20:41:45.765000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 9f2619e3-51de-494b-b953-db39fbbe7844)."
+            },
+            {
+                "id": "3657da08-405a-40cb-ba8c-6e3edd4c8465",
+                "createdAt": "2020-10-17T20:40:42.276000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "488e1445-c64c-4bf1-b604-731502a1e49f",
+                "createdAt": "2020-10-17T20:38:21.500000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task bab6b215-26fc-4b96-8693-992097ff889a)."
+            },
+            {
+                "id": "bbe8aa93-d3ee-4130-8c71-44be3861a2e3",
+                "createdAt": "2020-10-17T20:36:47.930000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "4eee5321-92de-4691-9ef0-676a94827831",
+                "createdAt": "2020-10-17T20:34:36.179000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 1b6e4bc6-be64-47ce-a944-2cf435d60191)."
+            },
+            {
+                "id": "0437c0fc-8ef3-4bbb-9615-6baf3b7f0f97",
+                "createdAt": "2020-10-17T20:32:31.039000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "90c03dc0-aa5c-47a3-98f3-dc69ac7235d5",
+                "createdAt": "2020-10-17T20:30:20.618000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 74361a7d-e34d-407e-ad74-8c6ecf73edc3)."
+            },
+            {
+                "id": "62d09ba8-e99d-4b64-907d-10e02694a3b8",
+                "createdAt": "2020-10-17T20:29:15.099000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "4f98ec19-171e-4047-a288-0509584bacc5",
+                "createdAt": "2020-10-17T20:26:58.474000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 0eecc73b-47fb-4a67-bb8c-36efa4a52c81)."
+            },
+            {
+                "id": "7bd417da-6c18-44cb-80d2-8fb1048312a2",
+                "createdAt": "2020-10-17T20:26:19.964000+05:30",
+                "message": "(service f-srv-travel-plan-api) stopped 1 pending tasks."
+            },
+            {
+                "id": "70b04752-6d3e-4a20-bc8e-5c9ab9bbe107",
+                "createdAt": "2020-10-17T20:26:07.801000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task c25a133d-7f0f-4f3d-887c-1866baa7c564)."
+            },
+            {
+                "id": "c4747229-2ac3-4d79-8563-cadc9c135de4",
+                "createdAt": "2020-10-17T20:26:07.516000+05:30",
+                "message": "(service f-srv-travel-plan-api) stopped 1 pending tasks."
+            },
+            {
+                "id": "e9b0d265-7232-4333-9118-6611115af268",
+                "createdAt": "2020-10-17T20:25:56.865000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task fa00ee78-6802-4c0b-a604-e3ba6b038c80)."
+            },
+            {
+                "id": "19f58087-eefc-4d21-a8f2-3a22205b0cff",
+                "createdAt": "2020-10-17T20:24:20.166000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "a8ca8cbb-0646-4a48-b7bd-c04a981f69f7",
+                "createdAt": "2020-10-17T20:22:21.224000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 37a36970-3e0f-4f45-ba6a-74c1d899918e)."
+            },
+            {
+                "id": "e85d222d-99a0-4031-9293-923bba265a8c",
+                "createdAt": "2020-10-17T20:21:18.699000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "bc737c89-8cfb-4bb3-82b9-9af6a9a7463f",
+                "createdAt": "2020-10-17T20:19:10.415000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task a3e4bc99-cfa9-4013-8c93-a986b729c582)."
+            },
+            {
+                "id": "21a231bc-d8ed-4950-a821-407578f545d4",
+                "createdAt": "2020-10-17T20:17:34.501000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "75168e59-133b-4d8d-b224-73bfff52dba7",
+                "createdAt": "2020-10-17T20:15:28.228000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 80fb1655-f265-43de-9341-ae8733696ff2)."
+            },
+            {
+                "id": "4aa5c664-8db6-478c-9431-9ca1287dd9f7",
+                "createdAt": "2020-10-17T20:14:23.941000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "d3155c3b-c47e-41e8-b33d-6c706470518e",
+                "createdAt": "2020-10-17T20:12:10.524000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 10a43ed7-b70b-4f9f-b80f-27aee4378438)."
+            },
+            {
+                "id": "d73e2781-2873-4f53-bdc1-79fd3772b22c",
+                "createdAt": "2020-10-17T20:10:35.708000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "61b12114-29cc-46ae-a7c3-b618602f2d65",
+                "createdAt": "2020-10-17T20:08:35.703000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 65baad3c-7ce3-40d8-a664-d237cd07ad58)."
+            },
+            {
+                "id": "9e161836-6793-4035-b50b-4024e66f0bde",
+                "createdAt": "2020-10-17T20:07:29.385000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "c440dcb3-ec3b-4e97-a753-06ca90026815",
+                "createdAt": "2020-10-17T20:05:23.407000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 98991a29-cec5-472e-8934-676111ebb8e1)."
+            },
+            {
+                "id": "894cf244-9448-4dc8-b1f5-788e0f3289b0",
+                "createdAt": "2020-10-17T20:03:48.246000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "ddd304e3-4caf-43b7-a0ab-8ef4b9aac52e",
+                "createdAt": "2020-10-17T20:01:37.677000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 1a2a11ca-c381-4ba5-b2e9-79291e27aac0)."
+            },
+            {
+                "id": "228abf90-7908-43ac-8828-f3b2ee92712f",
+                "createdAt": "2020-10-17T19:59:32.424000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "c014f904-a306-49f3-af5f-c6f16daef0ba",
+                "createdAt": "2020-10-17T19:58:04.146000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 6b859705-6069-4b57-9fab-78ef178e27e8)."
+            },
+            {
+                "id": "ac18d9d6-0775-4625-8033-e02e8b347fac",
+                "createdAt": "2020-10-17T19:57:02.963000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "d46250b1-571a-4545-9a9a-2a1371531296",
+                "createdAt": "2020-10-17T19:54:37.347000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task acfdf333-01af-4c49-a84a-920ed0b16416)."
+            },
+            {
+                "id": "4e652221-f012-43e9-82fa-c3d961e71431",
+                "createdAt": "2020-10-17T19:53:31.161000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "11f45023-5ca4-461d-85bb-90ca8a001c0e",
+                "createdAt": "2020-10-17T19:51:25.086000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 64a2ce24-9c45-48d1-b1c1-c523d5ed9da5)."
+            },
+            {
+                "id": "40a8bade-9f22-4453-8a10-446a3a08fac3",
+                "createdAt": "2020-10-17T19:50:22.690000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "4954e177-dd29-470a-a011-b6201e037918",
+                "createdAt": "2020-10-17T19:48:11.807000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 92f42f1c-3000-4652-8391-b7d9c56c456e)."
+            },
+            {
+                "id": "96565e5f-90b8-47a1-b2da-aa1131c9c127",
+                "createdAt": "2020-10-17T19:47:08.332000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "570b2b9e-b6b9-4b8c-a399-7c5a74f00145",
+                "createdAt": "2020-10-17T19:44:53.415000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task f2fc6b8d-9bb0-4adc-bcd9-7d40769e58fd)."
+            },
+            {
+                "id": "b611f24b-b090-4104-87ab-4425bb3c07ad",
+                "createdAt": "2020-10-17T19:43:51.470000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "c462f5bc-d335-433a-8a75-fe995344d52f",
+                "createdAt": "2020-10-17T19:41:18.142000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 75d80718-1d6a-498f-a0d0-a30a979ee45d)."
+            },
+            {
+                "id": "34fb8a82-4e19-4d2c-94a4-4a6c2ffd6de0",
+                "createdAt": "2020-10-17T19:39:42.132000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "da6b9f0d-1d8b-41cc-b6e0-9b6bc3d38dc0",
+                "createdAt": "2020-10-17T19:37:34.774000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 2ecfa21e-751f-41d2-88bb-66460ab31f71)."
+            },
+            {
+                "id": "780b0625-f3b6-4562-b6a1-a7a2f7e8916a",
+                "createdAt": "2020-10-17T19:36:29.917000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "e9715f0c-7949-4895-9ac3-73a486bc42c4",
+                "createdAt": "2020-10-17T19:34:12.991000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task ca0f6679-80b5-434c-8d68-5cdd2190b2c8)."
+            },
+            {
+                "id": "29796063-29c4-4965-8504-201d042b21a5",
+                "createdAt": "2020-10-17T19:32:38.593000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "af37fe59-e748-4331-9b66-f5bb251f6dc4",
+                "createdAt": "2020-10-17T19:30:22.987000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task bf424d84-d8a1-4c18-81f9-c6594a7218ff)."
+            },
+            {
+                "id": "4648ba59-72d8-4f45-8fdb-9e29fe32c2e4",
+                "createdAt": "2020-10-17T19:28:16.630000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "54272cba-a3f5-4c81-b828-c6245804a642",
+                "createdAt": "2020-10-17T19:26:41.681000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task ecd25a67-afed-4b88-a448-730411e5f192)."
+            },
+            {
+                "id": "490d8d32-2a2e-4975-803b-d5053ee721a1",
+                "createdAt": "2020-10-17T19:25:36.180000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "5bb9df73-5d01-4fd6-9e38-ce6e5b655a67",
+                "createdAt": "2020-10-17T19:23:26.151000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task 80ab3ea9-7e2a-4362-a13b-8e470852db3a)."
+            },
+            {
+                "id": "b2d0c127-eb52-496d-b03f-72388fa805af",
+                "createdAt": "2020-10-17T19:21:48.537000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            },
+            {
+                "id": "dc8ab299-75a4-4212-82cc-79a0fbd7c0a5",
+                "createdAt": "2020-10-17T19:19:40.049000+05:30",
+                "message": "(service f-srv-travel-plan-api) has started 1 tasks: (task ca639fb5-0a61-4ebb-9fbb-0b0a4e1504b7)."
+            },
+            {
+                "id": "ba0ce55f-ee5d-4c77-8401-3d4fe11c4828",
+                "createdAt": "2020-10-17T19:07:38.791000+05:30",
+                "message": "(service f-srv-travel-plan-api) has reached a steady state."
+            }
+        ],
+        "createdAt": "2020-10-17T19:07:35.992000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

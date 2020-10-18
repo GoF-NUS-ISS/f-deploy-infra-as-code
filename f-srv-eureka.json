@@ -1,0 +1,217 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-eureka",
+        "serviceName": "f-srv-eureka",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-yrdeqdybtzwua3h2"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-eureka-api:2",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/3146203172949109339",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-eureka-api:2",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T11:36:29.923000+05:30",
+                "updatedAt": "2020-10-18T13:48:07.333000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "0c576d83-a924-466d-b1b6-382b9f60fac3",
+                "createdAt": "2020-10-18T13:48:07.340000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "28535da4-d2ee-4922-a9a6-0974e64e7dd5",
+                "createdAt": "2020-10-18T13:47:56.139000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 78aa1807-7508-4d81-8fa2-9b98e67a4cce)."
+            },
+            {
+                "id": "fc04a4be-6e9e-4112-ba73-3ae0ec61066a",
+                "createdAt": "2020-10-18T11:39:10.289000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "bb2bb4f3-35dd-4dd9-986e-4d33fa6c57d2",
+                "createdAt": "2020-10-18T11:36:46.384000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 78aa1807-7508-4d81-8fa2-9b98e67a4cce)."
+            },
+            {
+                "id": "f0188208-d79f-42ae-914b-4b5983b07570",
+                "createdAt": "2020-10-18T05:40:15.041000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "935c84dd-a8ae-4376-9de5-5d0f1cf80e73",
+                "createdAt": "2020-10-17T23:40:14.911000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "feca5c24-b24f-406c-a272-d079c08a5324",
+                "createdAt": "2020-10-17T23:40:05.537000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 280a080f-94a6-4899-9280-eb81365a7b41)."
+            },
+            {
+                "id": "52b49e28-aefe-4e0d-8a4c-a5605cf20903",
+                "createdAt": "2020-10-17T19:22:20.503000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "b4ead96c-537d-4964-a37c-9ecc4c4f69a7",
+                "createdAt": "2020-10-17T19:19:50.606000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 280a080f-94a6-4899-9280-eb81365a7b41)."
+            },
+            {
+                "id": "10e56ee6-35a9-481c-9e99-43373beaf00a",
+                "createdAt": "2020-10-17T14:37:11.246000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "27558eea-1d62-493e-8a3a-ecc4bc777aa6",
+                "createdAt": "2020-10-17T08:36:41.011000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "679d280d-1b91-45d5-88af-d6b53077b29c",
+                "createdAt": "2020-10-17T08:36:31.801000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task dfd3fd3a-d3df-49d3-a1d8-6ab4c0891ea8)."
+            },
+            {
+                "id": "6c531d11-0214-421b-9f7e-bb04149c4bf7",
+                "createdAt": "2020-10-17T03:42:17.476000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "bcda6d4b-1c2a-4d59-a946-8df4c189e340",
+                "createdAt": "2020-10-16T21:42:15.991000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "4d16f391-4045-4e64-a524-073d7d4e6006",
+                "createdAt": "2020-10-16T21:41:31.565000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 4c2cd533-4236-47ad-b51e-435a95621f55)."
+            },
+            {
+                "id": "f15f4383-afe1-4ce7-8949-343c5992e6fc",
+                "createdAt": "2020-10-16T21:39:24.009000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task dfd3fd3a-d3df-49d3-a1d8-6ab4c0891ea8)."
+            },
+            {
+                "id": "58420b34-ffe6-4d1b-85a5-54731ab0f48c",
+                "createdAt": "2020-10-16T21:06:14.918000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "038828aa-7174-4f96-8726-46522c8f6f1f",
+                "createdAt": "2020-10-16T21:06:03.929000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 407be45c-a8f9-4505-ba8f-dc6561b30cd8)."
+            },
+            {
+                "id": "b0d64136-798d-4723-8456-57c8db716442",
+                "createdAt": "2020-10-16T20:00:38.098000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "3c3f43ad-ec64-4b12-915f-d5ea9a47deb2",
+                "createdAt": "2020-10-16T19:58:32.752000+05:30",
+                "message": "(service f-srv-eureka) has started 2 tasks: (task 407be45c-a8f9-4505-ba8f-dc6561b30cd8) (task 4c2cd533-4236-47ad-b51e-435a95621f55)."
+            },
+            {
+                "id": "688f1e8f-0632-43ff-8a06-dff637428d12",
+                "createdAt": "2020-10-16T19:52:10.237000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 06c43c7c-3f17-4ef4-902d-5e559361ec2f)."
+            },
+            {
+                "id": "3eef3a5a-b1dc-4f62-b056-a0ac8a2c0132",
+                "createdAt": "2020-10-16T19:45:43.122000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 8267f19c-6419-45fe-b8b3-faeef757a913)."
+            },
+            {
+                "id": "9099ddd6-348f-45a5-9c13-92542e19cdb2",
+                "createdAt": "2020-10-16T19:39:14.077000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 627b63f8-2125-43a5-9511-bea7b76f7630)."
+            },
+            {
+                "id": "5c74ac95-2a78-4493-8626-b8132dc60549",
+                "createdAt": "2020-10-16T19:37:13.034000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 177ffaa9-1c76-41df-8b7d-feb0ea9eb841)."
+            },
+            {
+                "id": "d35691c9-f3db-4ff4-b63b-4053851f226d",
+                "createdAt": "2020-10-16T19:35:13.510000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 3ffba1dd-bf92-48e7-bc0d-5d12a6281791)."
+            },
+            {
+                "id": "a24eb8b1-c499-49f1-82c5-926883a36a9d",
+                "createdAt": "2020-10-16T19:33:12.879000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task df46a51e-281e-48a7-84f4-cf1a79480558)."
+            },
+            {
+                "id": "7eee8e88-2a03-48fc-b194-b40dbdf4e70e",
+                "createdAt": "2020-10-16T19:30:25.865000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task ee79ebc7-63a6-475b-b14c-fc1f0c90f38e)."
+            },
+            {
+                "id": "5febb615-dd01-4c5e-b378-4c98cc068fca",
+                "createdAt": "2020-10-16T19:28:15.922000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task ce7f7c73-ad74-41f0-b186-b596ee3b4b18)."
+            },
+            {
+                "id": "a496d523-cb69-46b4-8060-db0d73918a96",
+                "createdAt": "2020-10-16T19:26:14.313000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 26fca840-5a8d-4e8a-8e93-f499f4a8cf5d)."
+            }
+        ],
+        "createdAt": "2020-10-16T19:26:04.901000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

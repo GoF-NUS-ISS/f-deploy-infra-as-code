@@ -1,0 +1,162 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-automated-builder",
+        "serviceName": "f-srv-automated-builder",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-xq4efu4m6fw5fanx"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:2",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/6694568045873763694",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:2",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-17T19:11:10.135000+05:30",
+                "updatedAt": "2020-10-18T13:48:10.393000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "e0d35dd3-31d0-4801-b3a8-5348a42381ae",
+                "createdAt": "2020-10-18T11:41:27.001000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "e92cb8f7-a06c-4604-947b-a31c1c11996f",
+                "createdAt": "2020-10-18T05:41:16.851000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "5a58f4a7-66d2-4b79-a10d-af5a28928851",
+                "createdAt": "2020-10-17T23:40:55.946000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "9d5c7da7-240c-4a14-b0de-80dc317c58bf",
+                "createdAt": "2020-10-17T23:40:46.955000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 8561cfef-0d67-4481-b56f-66425b1c1868)."
+            },
+            {
+                "id": "2175e6de-104b-4b2f-abbb-f18c2f4b819d",
+                "createdAt": "2020-10-17T19:14:48.433000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "25c3c6bd-f2b4-4c45-869b-78d51c8881ef",
+                "createdAt": "2020-10-17T19:14:07.762000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task a76ae27d-ed10-4743-800b-891205882ddc)."
+            },
+            {
+                "id": "901b1dff-981d-406b-bd18-d4b2eb58afe2",
+                "createdAt": "2020-10-17T19:11:21.690000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8561cfef-0d67-4481-b56f-66425b1c1868)."
+            },
+            {
+                "id": "e0cf3111-44ae-4ec7-9f50-bef09ad44c98",
+                "createdAt": "2020-10-17T18:30:05.353000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "b2ec5a42-c479-4041-9b08-b265421a33d0",
+                "createdAt": "2020-10-17T18:27:56.630000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a76ae27d-ed10-4743-800b-891205882ddc)."
+            },
+            {
+                "id": "dcb5d456-ddb3-4d05-8923-356fa7cf7807",
+                "createdAt": "2020-10-17T14:37:54.855000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "0031ae23-308b-42d8-9043-30954f1450ef",
+                "createdAt": "2020-10-17T08:37:39.007000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "b477eafe-9330-4a9d-844d-0dff0a112655",
+                "createdAt": "2020-10-17T08:36:57.750000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 08407eda-183b-4e4d-a97c-4b4093128135)."
+            },
+            {
+                "id": "06952903-1371-43a9-a53d-307b15b2bd72",
+                "createdAt": "2020-10-17T03:12:27.704000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "e4d7bd86-a29a-4910-af6b-0f63641d7213",
+                "createdAt": "2020-10-16T21:12:11.895000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "370c897a-91ee-46cd-b49f-37767a87f3bb",
+                "createdAt": "2020-10-16T21:11:29.921000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 9aa8d16b-4b17-45cd-88b8-c629181d8116)."
+            },
+            {
+                "id": "7ff066c2-6233-489a-9a3c-cbe44b6d8d4b",
+                "createdAt": "2020-10-16T21:08:50.311000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 08407eda-183b-4e4d-a97c-4b4093128135)."
+            },
+            {
+                "id": "99181bd0-d613-4c9a-8c07-cbdc531816dd",
+                "createdAt": "2020-10-16T21:07:24.933000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "e59a3316-d1dc-430a-b8c9-7e5f4fec6ab2",
+                "createdAt": "2020-10-16T21:05:34.892000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 9aa8d16b-4b17-45cd-88b8-c629181d8116)."
+            }
+        ],
+        "createdAt": "2020-10-16T21:05:26.302000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

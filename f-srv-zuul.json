@@ -1,0 +1,167 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-zuul",
+        "serviceName": "f-srv-zuul",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-yccz3wyq3gjoy7gd"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:3",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/8954423036770667927",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:3",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-18T12:04:44.657000+05:30",
+                "updatedAt": "2020-10-18T13:54:33.310000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "896b1005-34e8-4e97-9e34-1ce22828db87",
+                "createdAt": "2020-10-18T13:48:13.202000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "60534681-adfc-4a22-9876-adb0ccb21a59",
+                "createdAt": "2020-10-18T13:48:02.795000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task ac7541cb-9570-43db-a77a-2ec8da9460b9)."
+            },
+            {
+                "id": "69643a78-43a2-4e68-8206-8ef1ee395ba2",
+                "createdAt": "2020-10-18T12:06:51.523000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "162a3624-d7bf-4040-ba09-09cdc9fea592",
+                "createdAt": "2020-10-18T12:04:55.650000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task ac7541cb-9570-43db-a77a-2ec8da9460b9)."
+            },
+            {
+                "id": "42c80252-d1e9-4eff-b41a-af6267378094",
+                "createdAt": "2020-10-18T11:40:17.856000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "b31626cf-8865-456d-affe-680115b7ba73",
+                "createdAt": "2020-10-18T05:39:59.783000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "c75e5297-d44c-4842-abaa-495f6a9a88fd",
+                "createdAt": "2020-10-17T23:39:34.198000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "37a45da2-00d6-4f29-bef4-62abacf37997",
+                "createdAt": "2020-10-17T23:39:24.502000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 0f7d40d4-b5a2-4bb2-9a00-cf36766f38d2)."
+            },
+            {
+                "id": "0cf24737-bd55-444f-961d-3e6466c06c90",
+                "createdAt": "2020-10-17T22:44:04.056000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "e7daaa3e-57ce-4e6d-9308-a16d588ae732",
+                "createdAt": "2020-10-17T22:42:04.550000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 0f7d40d4-b5a2-4bb2-9a00-cf36766f38d2)."
+            },
+            {
+                "id": "2a23ee26-0d68-4dcc-8f63-270c486abf2b",
+                "createdAt": "2020-10-17T22:42:04.309000+05:30",
+                "message": "(service f-srv-zuul) stopped 1 pending tasks."
+            },
+            {
+                "id": "2ed8b14f-8767-4868-bc2d-0f949e148c6f",
+                "createdAt": "2020-10-17T22:41:17.026000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task ead4c705-1a1c-4ddd-8bfc-4a105670cafd)."
+            },
+            {
+                "id": "c154116b-379b-4fa2-a375-a52e69182df6",
+                "createdAt": "2020-10-17T20:44:39.409000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "69a17c18-662e-4033-8e5a-209bb7148792",
+                "createdAt": "2020-10-17T20:44:31.626000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 630fcb13-83bb-41e3-9a9c-813a3ff5b0fd)."
+            },
+            {
+                "id": "86c150a6-546e-4acf-835b-9e012653bcdb",
+                "createdAt": "2020-10-17T20:29:02.050000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "bb2fd56a-eed7-4f9d-a33f-080c76c0b847",
+                "createdAt": "2020-10-17T20:28:22.203000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 97664864-5997-48cc-b98c-ca6cf37239e2)."
+            },
+            {
+                "id": "0d8232d1-3063-47b9-845f-4c673cee7ec8",
+                "createdAt": "2020-10-17T20:25:58.769000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 630fcb13-83bb-41e3-9a9c-813a3ff5b0fd)."
+            },
+            {
+                "id": "f88fe2b9-fce4-4bdb-af34-11da0de8a877",
+                "createdAt": "2020-10-17T20:11:11.689000+05:30",
+                "message": "(service f-srv-zuul) has reached a steady state."
+            },
+            {
+                "id": "1a64f894-7361-4e01-8817-37745b2b1fcb",
+                "createdAt": "2020-10-17T20:09:12.754000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 97664864-5997-48cc-b98c-ca6cf37239e2)."
+            }
+        ],
+        "createdAt": "2020-10-17T20:09:10.996000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}
