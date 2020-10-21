@@ -6,7 +6,7 @@ aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-pulsar
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-travel-plan-api --desired-count 1 --region us-east-1 > f-srv-travel-plan-api.json
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-zuul --desired-count 1 --region us-east-1 > f-srv-zuul.json
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-automated-builder --desired-count 1 --region us-east-1 > f-srv-automated-builder.json
-aws ecs update-service --cluster travel-plan-app-env-prod --service service-travel-plan-ui --desired-count 1 --region us-east-1 > service-travel-plan-ui.json
+aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-ui --desired-count 1 --region us-east-1 > service-travel-plan-ui.json
 
 
 

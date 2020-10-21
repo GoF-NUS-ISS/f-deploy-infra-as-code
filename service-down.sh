@@ -1,5 +1,5 @@
 #Bring down the running instances of all the services down
-aws ecs update-service --cluster travel-plan-app-env-prod --service service-travel-plan-ui --desired-count 0 --region us-east-1 > service-travel-plan-ui.json
+aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-ui --desired-count 0 --region us-east-1 > service-travel-plan-ui.json
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-redis --desired-count 0 --region us-east-1 > f-srv-redis.json
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-mongo --desired-count 0 --region us-east-1 > f-srv-mongo.json
 aws ecs update-service --cluster travel-plan-app-env-prod --service f-srv-pulsar --desired-count 0 --region us-east-1 > f-srv-pulsar.json
