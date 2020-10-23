@@ -15,21 +15,21 @@
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:2",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:4",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/6694568045873763694",
+                "id": "ecs-svc/0884060980597898363",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:2",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:4",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 0,
-                "createdAt": "2020-10-17T19:11:10.135000+05:30",
-                "updatedAt": "2020-10-18T13:48:10.393000+05:30",
+                "createdAt": "2020-10-23T13:51:31.610000+05:30",
+                "updatedAt": "2020-10-23T13:51:56.812000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -48,6 +48,211 @@
         ],
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
+            {
+                "id": "8f7dc27d-df8f-467b-b9c3-8500b18a9947",
+                "createdAt": "2020-10-23T14:24:44.886000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "c9e3c8bd-76e8-4cc8-9d02-7caa3b491fe5",
+                "createdAt": "2020-10-23T08:24:25.900000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "e5246cd9-ba49-420a-8027-7da93d58db37",
+                "createdAt": "2020-10-23T02:24:21.902000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "a8172bdb-00ea-47cf-b763-f513f9253634",
+                "createdAt": "2020-10-22T20:24:19.198000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "49443148-f891-4840-a1d3-fe521afc81d3",
+                "createdAt": "2020-10-22T20:24:08.907000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 8e277e8484804a5b918015e0a2ba8231)."
+            },
+            {
+                "id": "ccb9af3c-b1a2-44ba-b9a8-d771d8ed4887",
+                "createdAt": "2020-10-22T15:29:48.854000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "c8264640-64a0-4d56-82de-02f192ddf56c",
+                "createdAt": "2020-10-22T09:29:19.155000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "ddf162e6-ca03-4de6-8fb8-f5dae89a60a0",
+                "createdAt": "2020-10-22T09:27:58.350000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8e277e8484804a5b918015e0a2ba8231)."
+            },
+            {
+                "id": "f6401f5e-a5a2-4eca-9e7e-b8e84531504a",
+                "createdAt": "2020-10-22T04:14:44.723000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "2ae5e302-759d-4d19-a395-5a648d8f2bba",
+                "createdAt": "2020-10-21T22:14:19.291000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "74a6fda5-227e-4e74-aad4-0ce228330fab",
+                "createdAt": "2020-10-21T22:14:08.277000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 97ee9e86-782f-4a31-b927-0b70697c2a96)."
+            },
+            {
+                "id": "baa545f5-6a07-4d2c-a968-b52b4ae1bae4",
+                "createdAt": "2020-10-21T17:48:01.454000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "872971bb-e466-40f4-94de-4f44de7fb8b4",
+                "createdAt": "2020-10-21T17:46:04.073000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 97ee9e86-782f-4a31-b927-0b70697c2a96)."
+            },
+            {
+                "id": "4e8e0f23-586f-4a20-99f8-493c13c74dcb",
+                "createdAt": "2020-10-21T17:45:29.799000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "4bfad76e-b833-43fa-9a70-455b67fe714e",
+                "createdAt": "2020-10-21T17:43:25.084000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 34bcb901-2953-4fbd-92c2-26ef4e2cc0b2)."
+            },
+            {
+                "id": "4797ffb3-aab6-47bf-9d02-45f93360221d",
+                "createdAt": "2020-10-21T17:31:43.862000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "bc336fd9-c9f4-454d-8949-8653923a6180",
+                "createdAt": "2020-10-21T11:31:36.684000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "84aab692-7376-46fb-b2e0-6f480bfe3e4e",
+                "createdAt": "2020-10-21T05:31:16.754000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "9ff1168d-0740-409a-b803-4f5ead98c869",
+                "createdAt": "2020-10-20T23:31:00.710000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "d83f55dd-256f-4945-9fc9-dfd084a3b2f0",
+                "createdAt": "2020-10-20T17:30:41.641000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "d180d5df-a974-4064-ba0e-71b7b15d42cc",
+                "createdAt": "2020-10-20T17:30:31.633000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 47108e4d-2540-4b1e-af60-06228eeecad2)."
+            },
+            {
+                "id": "642ea2e3-d20d-41d8-974f-75a32ee72c57",
+                "createdAt": "2020-10-20T14:06:22.547000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "551c61e5-f12c-43da-950e-645f9e291770",
+                "createdAt": "2020-10-20T14:04:26.126000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 47108e4d-2540-4b1e-af60-06228eeecad2)."
+            },
+            {
+                "id": "a9dca581-ee4d-4622-83cb-18907f0553d8",
+                "createdAt": "2020-10-20T11:26:14.177000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "0cdc5d41-8ff3-476d-b4c7-dc0eeeaf0078",
+                "createdAt": "2020-10-20T05:26:10.670000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "718eeceb-3703-47d7-91d7-4795a1c71b75",
+                "createdAt": "2020-10-19T23:25:51.671000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "f27c82dc-af37-4ddd-a89a-fe96c2872e09",
+                "createdAt": "2020-10-19T17:25:31.327000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "c2d87e96-a391-4ab0-85be-a95b527c48b4",
+                "createdAt": "2020-10-19T17:25:23.752000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task fae8c874-af87-4407-9f1f-ffeb7075b46f)."
+            },
+            {
+                "id": "7d2376a5-647e-4b41-a8e0-955892334efc",
+                "createdAt": "2020-10-19T15:36:36.657000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "f06db62e-d665-4bce-a6d3-0511a0f61efd",
+                "createdAt": "2020-10-19T15:34:34.744000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task fae8c874-af87-4407-9f1f-ffeb7075b46f)."
+            },
+            {
+                "id": "d83fb8ba-242c-43b4-8ad0-7046e50f7324",
+                "createdAt": "2020-10-19T09:44:25.658000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "2909f72a-3b4a-49b5-a3bc-8ccf572c9eca",
+                "createdAt": "2020-10-19T03:44:16.199000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "d12d532d-a1b2-461a-864f-5cc6ea423273",
+                "createdAt": "2020-10-18T21:43:50.321000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "3dd69ac8-e172-444d-9bb2-e692aae0fc9c",
+                "createdAt": "2020-10-18T15:43:36.905000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "9a2e6de7-0425-4cbe-af2c-ac7e0cfe2a95",
+                "createdAt": "2020-10-18T15:43:24.723000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task cff61776-14e7-4c52-960e-9e5ef1d43816)."
+            },
+            {
+                "id": "d13932b3-6005-4d55-af63-d048b4435b47",
+                "createdAt": "2020-10-18T15:32:49.355000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "a0702481-8e80-40ce-b4d5-0650abbcebdf",
+                "createdAt": "2020-10-18T15:30:41.169000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task cff61776-14e7-4c52-960e-9e5ef1d43816)."
+            },
+            {
+                "id": "547643c6-c4f5-42b4-8c8f-1788231d6347",
+                "createdAt": "2020-10-18T14:28:11.009000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "c3a9757f-9844-4b81-b236-4274ee7e9f12",
+                "createdAt": "2020-10-18T14:28:01.617000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 3b8c0556-c938-47c8-99f0-c73db1acaf1f)."
+            },
+            {
+                "id": "a3c8313d-5b00-4273-a97a-2742bf003c92",
+                "createdAt": "2020-10-18T13:56:43.523000+05:30",
+                "message": "(service f-srv-automated-builder) has reached a steady state."
+            },
+            {
+                "id": "8a19faf2-63ac-4295-8457-41dcffac3748",
+                "createdAt": "2020-10-18T13:54:43.991000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 3b8c0556-c938-47c8-99f0-c73db1acaf1f)."
+            },
             {
                 "id": "e0d35dd3-31d0-4801-b3a8-5348a42381ae",
                 "createdAt": "2020-10-18T11:41:27.001000+05:30",

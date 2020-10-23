@@ -1,9 +1,15 @@
 {
     "service": {
-        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-zuul",
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/travel-plan-app-env-prod/f-srv-zuul",
         "serviceName": "f-srv-zuul",
         "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
-        "loadBalancers": [],
+        "loadBalancers": [
+            {
+                "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd",
+                "containerName": "travel-plan-zuul-api",
+                "containerPort": 9527
+            }
+        ],
         "serviceRegistries": [
             {
                 "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-yccz3wyq3gjoy7gd"
@@ -15,21 +21,21 @@
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:3",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:9",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/8954423036770667927",
+                "id": "ecs-svc/5927654603685723278",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:3",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-zuul-api:9",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 0,
-                "createdAt": "2020-10-18T12:04:44.657000+05:30",
-                "updatedAt": "2020-10-18T13:54:33.310000+05:30",
+                "createdAt": "2020-10-22T18:21:49.665000+05:30",
+                "updatedAt": "2020-10-22T20:24:06.934000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -49,102 +55,507 @@
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "896b1005-34e8-4e97-9e34-1ce22828db87",
-                "createdAt": "2020-10-18T13:48:13.202000+05:30",
+                "id": "2352dc38-99d2-44a0-95d8-ca6dd17c68cf",
+                "createdAt": "2020-10-23T14:24:54.459000+05:30",
                 "message": "(service f-srv-zuul) has reached a steady state."
             },
             {
-                "id": "60534681-adfc-4a22-9876-adb0ccb21a59",
-                "createdAt": "2020-10-18T13:48:02.795000+05:30",
-                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task ac7541cb-9570-43db-a77a-2ec8da9460b9)."
-            },
-            {
-                "id": "69643a78-43a2-4e68-8206-8ef1ee395ba2",
-                "createdAt": "2020-10-18T12:06:51.523000+05:30",
+                "id": "61e8417a-be7c-40c8-80a4-3207db0f6a61",
+                "createdAt": "2020-10-23T08:24:26.093000+05:30",
                 "message": "(service f-srv-zuul) has reached a steady state."
             },
             {
-                "id": "162a3624-d7bf-4040-ba09-09cdc9fea592",
-                "createdAt": "2020-10-18T12:04:55.650000+05:30",
-                "message": "(service f-srv-zuul) has started 1 tasks: (task ac7541cb-9570-43db-a77a-2ec8da9460b9)."
-            },
-            {
-                "id": "42c80252-d1e9-4eff-b41a-af6267378094",
-                "createdAt": "2020-10-18T11:40:17.856000+05:30",
+                "id": "31735021-1bca-4a59-a135-c25ae7492a98",
+                "createdAt": "2020-10-23T02:24:10.774000+05:30",
                 "message": "(service f-srv-zuul) has reached a steady state."
             },
             {
-                "id": "b31626cf-8865-456d-affe-680115b7ba73",
-                "createdAt": "2020-10-18T05:39:59.783000+05:30",
+                "id": "5186d16d-2d16-4414-874e-3f2040b1a754",
+                "createdAt": "2020-10-22T20:24:06.961000+05:30",
                 "message": "(service f-srv-zuul) has reached a steady state."
             },
             {
-                "id": "c75e5297-d44c-4842-abaa-495f6a9a88fd",
-                "createdAt": "2020-10-17T23:39:34.198000+05:30",
-                "message": "(service f-srv-zuul) has reached a steady state."
-            },
-            {
-                "id": "37a45da2-00d6-4f29-bef4-62abacf37997",
-                "createdAt": "2020-10-17T23:39:24.502000+05:30",
-                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 0f7d40d4-b5a2-4bb2-9a00-cf36766f38d2)."
-            },
-            {
-                "id": "0cf24737-bd55-444f-961d-3e6466c06c90",
-                "createdAt": "2020-10-17T22:44:04.056000+05:30",
-                "message": "(service f-srv-zuul) has reached a steady state."
-            },
-            {
-                "id": "e7daaa3e-57ce-4e6d-9308-a16d588ae732",
-                "createdAt": "2020-10-17T22:42:04.550000+05:30",
-                "message": "(service f-srv-zuul) has started 1 tasks: (task 0f7d40d4-b5a2-4bb2-9a00-cf36766f38d2)."
-            },
-            {
-                "id": "2a23ee26-0d68-4dcc-8f63-270c486abf2b",
-                "createdAt": "2020-10-17T22:42:04.309000+05:30",
+                "id": "347abb22-2671-4f92-9976-523715867c8d",
+                "createdAt": "2020-10-22T20:23:57.256000+05:30",
                 "message": "(service f-srv-zuul) stopped 1 pending tasks."
             },
             {
-                "id": "2ed8b14f-8767-4868-bc2d-0f949e148c6f",
-                "createdAt": "2020-10-17T22:41:17.026000+05:30",
-                "message": "(service f-srv-zuul) has started 1 tasks: (task ead4c705-1a1c-4ddd-8bfc-4a105670cafd)."
+                "id": "480349ad-2909-4634-b531-7414d9130f0e",
+                "createdAt": "2020-10-22T20:22:25.814000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task fed895b1764c482dbbbc5825215c7a5a)."
             },
             {
-                "id": "c154116b-379b-4fa2-a375-a52e69182df6",
-                "createdAt": "2020-10-17T20:44:39.409000+05:30",
-                "message": "(service f-srv-zuul) has reached a steady state."
+                "id": "aa995ed3-0d29-46f6-a565-872f6082c3d2",
+                "createdAt": "2020-10-22T20:22:16.039000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 8df3be75e36e42999cfa24b28ed8a726)."
             },
             {
-                "id": "69a17c18-662e-4033-8e5a-209bb7148792",
-                "createdAt": "2020-10-17T20:44:31.626000+05:30",
-                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 630fcb13-83bb-41e3-9a9c-813a3ff5b0fd)."
+                "id": "5e2b2657-e722-4849-99ec-8f3a9dff06fb",
+                "createdAt": "2020-10-22T20:22:16.007000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
             },
             {
-                "id": "86c150a6-546e-4acf-835b-9e012653bcdb",
-                "createdAt": "2020-10-17T20:29:02.050000+05:30",
-                "message": "(service f-srv-zuul) has reached a steady state."
+                "id": "861ed57f-8832-4468-836b-80b2a5668dd4",
+                "createdAt": "2020-10-22T20:22:15.981000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
             },
             {
-                "id": "bb2fd56a-eed7-4f9d-a33f-080c76c0b847",
-                "createdAt": "2020-10-17T20:28:22.203000+05:30",
-                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 97664864-5997-48cc-b98c-ca6cf37239e2)."
+                "id": "38746ba9-6d7f-4848-b68b-a094ae03d782",
+                "createdAt": "2020-10-22T20:05:38.414000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
             },
             {
-                "id": "0d8232d1-3063-47b9-845f-4c673cee7ec8",
-                "createdAt": "2020-10-17T20:25:58.769000+05:30",
-                "message": "(service f-srv-zuul) has started 1 tasks: (task 630fcb13-83bb-41e3-9a9c-813a3ff5b0fd)."
+                "id": "01df9fdd-a1d4-48f2-9c5d-cb876f383013",
+                "createdAt": "2020-10-22T20:04:00.735000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 8df3be75e36e42999cfa24b28ed8a726)."
             },
             {
-                "id": "f88fe2b9-fce4-4bdb-af34-11da0de8a877",
-                "createdAt": "2020-10-17T20:11:11.689000+05:30",
-                "message": "(service f-srv-zuul) has reached a steady state."
+                "id": "a335d966-3b98-4ed1-bdac-c6611bc563fd",
+                "createdAt": "2020-10-22T20:03:50.610000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 405fbbda915b4cb6a09db80f3570f24c)."
             },
             {
-                "id": "1a64f894-7361-4e01-8817-37745b2b1fcb",
-                "createdAt": "2020-10-17T20:09:12.754000+05:30",
-                "message": "(service f-srv-zuul) has started 1 tasks: (task 97664864-5997-48cc-b98c-ca6cf37239e2)."
+                "id": "5d02ce05-a099-4346-91fd-a4da92eb0196",
+                "createdAt": "2020-10-22T20:03:50.572000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "c7e10dab-5a27-491e-933a-224ff95a0a06",
+                "createdAt": "2020-10-22T20:03:50.545000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "8241ba67-e821-4bf3-97cd-8b488a6c1376",
+                "createdAt": "2020-10-22T19:47:09.482000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "5602b6ad-3120-491e-923b-ece10d410c4c",
+                "createdAt": "2020-10-22T19:45:50.707000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 405fbbda915b4cb6a09db80f3570f24c)."
+            },
+            {
+                "id": "e6eb9640-0200-44b8-a656-818312e1fcf9",
+                "createdAt": "2020-10-22T19:45:38.182000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 034a622802f6464e8e8bcf223fc6969b)."
+            },
+            {
+                "id": "041754e8-2857-4e68-9e32-4afea5de9d71",
+                "createdAt": "2020-10-22T19:45:38.147000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "bb3e98c2-a67c-45ca-bb31-203b63267e53",
+                "createdAt": "2020-10-22T19:45:38.115000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "f884b449-7226-46cc-81fd-c4537145eb08",
+                "createdAt": "2020-10-22T19:28:57.243000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "b6e714e3-a867-42b0-9834-adc6d69b1679",
+                "createdAt": "2020-10-22T19:26:54.248000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 034a622802f6464e8e8bcf223fc6969b)."
+            },
+            {
+                "id": "330c565f-208b-4505-ba8a-f819f9d1ed6b",
+                "createdAt": "2020-10-22T19:26:41.798000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 44aa9162cfd548f28f6f1223b62f55fd)."
+            },
+            {
+                "id": "d7937f95-0afa-4df9-af31-2483482095d2",
+                "createdAt": "2020-10-22T19:26:41.766000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "8f9a8e79-c314-462b-b7f7-008cd6bbed19",
+                "createdAt": "2020-10-22T19:26:41.736000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "5d12c1f2-4f46-40b5-890f-b5357e4b63f6",
+                "createdAt": "2020-10-22T19:10:02.265000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "5fbd8bf6-c46f-44f2-8b00-6e34ad73436f",
+                "createdAt": "2020-10-22T19:08:32.980000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 44aa9162cfd548f28f6f1223b62f55fd)."
+            },
+            {
+                "id": "885887d2-a440-44cc-8d1b-d1ca9bb66b21",
+                "createdAt": "2020-10-22T19:08:23.321000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 58755eb0ee6e4df1ad795e9058c8259d)."
+            },
+            {
+                "id": "4de522cd-4a40-44f8-a42d-939f3ed4eaf9",
+                "createdAt": "2020-10-22T19:08:23.288000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "5a8af554-5611-4124-927b-8d6736235ef2",
+                "createdAt": "2020-10-22T19:08:23.258000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "4a08d33c-3c0d-45a9-aa62-e30b24b87285",
+                "createdAt": "2020-10-22T18:51:46.934000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "e680e233-8e7b-4a39-be5d-bf11ced2dcf4",
+                "createdAt": "2020-10-22T18:50:21.091000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 58755eb0ee6e4df1ad795e9058c8259d)."
+            },
+            {
+                "id": "04c93383-69fa-4d27-92e9-fa5bbd1a123f",
+                "createdAt": "2020-10-22T18:50:08.658000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 82909d72c0ab4e90a1e2b01cc6614878)."
+            },
+            {
+                "id": "2f7c91e1-95ea-4d50-9149-c7a47d0d46f3",
+                "createdAt": "2020-10-22T18:50:08.623000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "9bc78b94-f9c6-4cd2-9395-01a73f118040",
+                "createdAt": "2020-10-22T18:50:08.594000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "5450a348-4b34-4043-991c-709ff32a4751",
+                "createdAt": "2020-10-22T18:33:28.023000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "b66866c6-e163-4111-bf38-dcc95b5b6657",
+                "createdAt": "2020-10-22T18:32:06.056000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 82909d72c0ab4e90a1e2b01cc6614878)."
+            },
+            {
+                "id": "7373499c-af51-4f35-a98b-c867c1e6cf60",
+                "createdAt": "2020-10-22T18:31:56.139000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 4e5e2dd428d64428ab7e286633e98162)."
+            },
+            {
+                "id": "f004001b-4c66-413e-ad80-04f144a5ea76",
+                "createdAt": "2020-10-22T18:31:56.099000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "bc4d8e71-6b89-4359-a0a3-21c66242e1bb",
+                "createdAt": "2020-10-22T18:31:56.072000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "4149694e-8124-456d-9fa9-3bc5b4c45c19",
+                "createdAt": "2020-10-22T18:23:44.081000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "9a5b8dd1-16dc-442f-9581-77caed046b21",
+                "createdAt": "2020-10-22T18:22:44.569000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "789c01a9-5780-4278-8062-056806b5b3b1",
+                "createdAt": "2020-10-22T18:22:31.870000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task e85f03b657a446ecbeb8811f511083ea)."
+            },
+            {
+                "id": "b2cdcb25-bc85-40dd-b61f-463395f14ae3",
+                "createdAt": "2020-10-22T18:22:00.811000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 4e5e2dd428d64428ab7e286633e98162)."
+            },
+            {
+                "id": "ff7d50f2-318c-4281-b1ca-142e3993af1f",
+                "createdAt": "2020-10-22T18:21:48.201000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "87f71754-762a-4918-8d5f-e26c3da44cb9",
+                "createdAt": "2020-10-22T18:20:04.165000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task e85f03b657a446ecbeb8811f511083ea)."
+            },
+            {
+                "id": "d3892e1e-2780-4503-99e8-5a400b606f47",
+                "createdAt": "2020-10-22T18:19:54.123000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task e68071f50fb141cbb056432e45bb1bc8)."
+            },
+            {
+                "id": "67ea4647-f978-4673-8cad-1350376783d9",
+                "createdAt": "2020-10-22T18:19:54.089000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "25320aa1-77c4-4a5e-8389-0c67133a2946",
+                "createdAt": "2020-10-22T18:19:54.064000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "25d14f26-0510-4e9e-a5c5-1c34a75cc80a",
+                "createdAt": "2020-10-22T18:17:32.288000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "f4b12fad-cec4-451c-911f-0def1d55e041",
+                "createdAt": "2020-10-22T18:16:01.072000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task e68071f50fb141cbb056432e45bb1bc8)."
+            },
+            {
+                "id": "8e883cd6-ed37-42ca-aaf5-5cc41727fbce",
+                "createdAt": "2020-10-22T18:15:48.811000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 39bacc6fce1348b68a189a7f02ef4de8)."
+            },
+            {
+                "id": "eaa60063-b8f3-45e2-997e-f8d6e7d636ef",
+                "createdAt": "2020-10-22T18:15:48.780000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "7b6af15d-92de-44f6-9130-708b4715db30",
+                "createdAt": "2020-10-22T18:15:48.752000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "f3fb4ba3-09f6-45ac-a981-1f539f59ead8",
+                "createdAt": "2020-10-22T18:13:11.241000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "95ddc9db-b330-4e99-819b-fe43cea8c03e",
+                "createdAt": "2020-10-22T18:11:39.216000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 39bacc6fce1348b68a189a7f02ef4de8)."
+            },
+            {
+                "id": "192ea2b0-ea44-4852-aa46-3437d4f0691e",
+                "createdAt": "2020-10-22T18:11:26.824000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task d8a50fb0eb67493799d58522fb5b08a2)."
+            },
+            {
+                "id": "30fbbf73-bd8f-4ec2-aaaa-c5a47171a4f5",
+                "createdAt": "2020-10-22T18:11:26.791000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "67861549-58f5-4e23-81d9-9fc97c5fd0e4",
+                "createdAt": "2020-10-22T18:11:26.762000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "2ba66d5c-ce09-402c-9ed1-b79526c02b78",
+                "createdAt": "2020-10-22T18:08:52.362000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "9a7e3590-42bc-4b68-8001-d37df5092550",
+                "createdAt": "2020-10-22T18:07:33.249000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task d8a50fb0eb67493799d58522fb5b08a2)."
+            },
+            {
+                "id": "c4a9c5fa-b1c6-4b35-b532-e9cd88fbc95c",
+                "createdAt": "2020-10-22T18:07:24.004000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task c935433328cc4050b5fc7e23cd3a66f9)."
+            },
+            {
+                "id": "771a4daf-0f29-4e7f-a444-eddea1d10bcd",
+                "createdAt": "2020-10-22T18:07:23.967000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "2ebbad89-3d94-4602-9398-328f488d80e8",
+                "createdAt": "2020-10-22T18:07:23.940000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "e96381b4-723d-487d-babd-a509dcadfde6",
+                "createdAt": "2020-10-22T18:04:52.839000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "9a42f289-02d9-4b6d-be7a-a7d108fbbda7",
+                "createdAt": "2020-10-22T18:03:21.318000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task c935433328cc4050b5fc7e23cd3a66f9)."
+            },
+            {
+                "id": "49000d83-6268-41f6-86ae-d9d5e12a06d9",
+                "createdAt": "2020-10-22T18:03:11.230000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 8b57acf084964e21af81bc1d7558a182)."
+            },
+            {
+                "id": "cde75d5b-9c2e-4567-963c-3b66d0c47fb9",
+                "createdAt": "2020-10-22T18:03:11.196000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "21367466-c4bd-496f-8189-ba70840f2748",
+                "createdAt": "2020-10-22T18:03:11.155000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "0b34a3b5-da6d-4267-9617-0ce0e48c6cf4",
+                "createdAt": "2020-10-22T18:00:40.851000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "4b1488c9-8904-44b4-9ffe-03c8563fdc32",
+                "createdAt": "2020-10-22T17:59:18.407000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 8b57acf084964e21af81bc1d7558a182)."
+            },
+            {
+                "id": "62409a18-d2b3-4d81-9a7f-354366d4601c",
+                "createdAt": "2020-10-22T17:59:09.055000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 97921bbbd24843749dd427ad76ec84f3)."
+            },
+            {
+                "id": "4565236e-c977-477d-b6d4-fc1780029846",
+                "createdAt": "2020-10-22T17:59:09.021000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "5bce36d2-0565-4301-8332-3212b0c3c1bd",
+                "createdAt": "2020-10-22T17:59:08.999000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "d4b5611e-0d34-49e1-b068-1533258df8cd",
+                "createdAt": "2020-10-22T17:56:44.268000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "161bb62d-959a-467c-abc4-af6e5e979744",
+                "createdAt": "2020-10-22T17:55:09.457000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 97921bbbd24843749dd427ad76ec84f3)."
+            },
+            {
+                "id": "4e9a3c1e-fda3-4a43-9c85-b13c54dbc5d5",
+                "createdAt": "2020-10-22T17:55:00.375000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task b10a150a5c2a45c4873b3ae331b61b27)."
+            },
+            {
+                "id": "f9c17768-09d1-4347-a310-72d3a4f5ce95",
+                "createdAt": "2020-10-22T17:55:00.331000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "e5960669-5d66-49ab-addf-c10328b1b698",
+                "createdAt": "2020-10-22T17:55:00.308000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "04f55261-ddb9-4bce-8ba1-bc645f3c84d9",
+                "createdAt": "2020-10-22T17:52:25.670000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "bcb56fb4-1473-434e-a849-72ec1221ad78",
+                "createdAt": "2020-10-22T17:51:04.320000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task b10a150a5c2a45c4873b3ae331b61b27)."
+            },
+            {
+                "id": "a6688293-eeb6-4069-bfe1-9aeeb7cbf9f0",
+                "createdAt": "2020-10-22T17:50:54.043000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task ce2081b7696541429d7e207b12fa1b0c)."
+            },
+            {
+                "id": "c0d23274-c9fc-45f1-9887-589f343c82e6",
+                "createdAt": "2020-10-22T17:50:54.005000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "cd24d238-19b7-44ca-81d8-7489f127686e",
+                "createdAt": "2020-10-22T17:50:53.979000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "a11bce94-c640-4ef2-8a75-e31e8884fafe",
+                "createdAt": "2020-10-22T17:48:23.169000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "6c6b29ae-536d-4f7b-9927-e898e201dc9e",
+                "createdAt": "2020-10-22T17:46:44.999000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task ce2081b7696541429d7e207b12fa1b0c)."
+            },
+            {
+                "id": "159c1489-f160-4b5a-88ca-67c8c88eb081",
+                "createdAt": "2020-10-22T17:46:35.149000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 152bee5a971a4736b77773da2c61eb63)."
+            },
+            {
+                "id": "0d6d7a8f-48b2-4b74-aad0-bf2756ffb1d6",
+                "createdAt": "2020-10-22T17:46:35.117000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "e822ccad-9fe9-45fa-9ad0-01018ac83648",
+                "createdAt": "2020-10-22T17:46:35.092000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "7b8a021c-23dc-4daf-88cd-e62e52ccaac8",
+                "createdAt": "2020-10-22T17:44:06.870000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "663f27f7-fa92-4000-b597-fa44976a548b",
+                "createdAt": "2020-10-22T17:42:19.997000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 152bee5a971a4736b77773da2c61eb63)."
+            },
+            {
+                "id": "f6c6097a-143f-4481-a922-5ee9e49e32c6",
+                "createdAt": "2020-10-22T17:42:09.689000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task 842411b7ece94d679cc1ead2dfda3a9e)."
+            },
+            {
+                "id": "6052b434-a88c-4f8f-bb13-5b8eec355443",
+                "createdAt": "2020-10-22T17:42:09.652000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "260f337f-d86c-4de1-90bf-adca0782986f",
+                "createdAt": "2020-10-22T17:42:09.627000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "2b6fe98e-f0df-447c-ba06-a0dbbe1b4385",
+                "createdAt": "2020-10-22T17:39:47.557000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "2c88fec4-0303-42f0-96b0-ecb86aafee05",
+                "createdAt": "2020-10-22T17:38:19.523000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task 842411b7ece94d679cc1ead2dfda3a9e)."
+            },
+            {
+                "id": "c6ccadce-2603-4e20-bb18-23f45e33268f",
+                "createdAt": "2020-10-22T17:38:09.617000+05:30",
+                "message": "(service f-srv-zuul) has stopped 1 running tasks: (task fdb37863a09246fe93f51c0a0d8e7e68)."
+            },
+            {
+                "id": "fb1d1c77-1de1-4b43-b0d4-f6ec951b8afe",
+                "createdAt": "2020-10-22T17:38:09.583000+05:30",
+                "message": "(service f-srv-zuul) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "59c59102-23ca-4ae6-a887-b55c2e9d70d9",
+                "createdAt": "2020-10-22T17:38:09.543000+05:30",
+                "message": "(service f-srv-zuul) (port 9527) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd) due to (reason Health checks failed with these codes: [404])."
+            },
+            {
+                "id": "f8d01d3c-3816-4f62-affe-ebca70eda6ad",
+                "createdAt": "2020-10-22T17:35:35.067000+05:30",
+                "message": "(service f-srv-zuul) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/trgt-grp-zuul-api/8c74527e016a2efd)"
+            },
+            {
+                "id": "36623611-a7d3-4544-9d75-812c62ef47b0",
+                "createdAt": "2020-10-22T17:33:44.690000+05:30",
+                "message": "(service f-srv-zuul) has started 1 tasks: (task fdb37863a09246fe93f51c0a0d8e7e68)."
             }
         ],
-        "createdAt": "2020-10-17T20:09:10.996000+05:30",
+        "createdAt": "2020-10-22T17:25:21.040000+05:30",
         "placementConstraints": [],
         "placementStrategy": [],
         "networkConfiguration": {
@@ -159,6 +570,7 @@
                 "assignPublicIp": "ENABLED"
             }
         },
+        "healthCheckGracePeriodSeconds": 1000,
         "schedulingStrategy": "REPLICA",
         "createdBy": "arn:aws:iam::356567610291:root",
         "enableECSManagedTags": false,

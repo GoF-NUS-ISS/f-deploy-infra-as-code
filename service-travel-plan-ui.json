@@ -1,7 +1,7 @@
 {
     "service": {
-        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/service-travel-plan-ui",
-        "serviceName": "service-travel-plan-ui",
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/f-srv-ui",
+        "serviceName": "f-srv-ui",
         "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
         "loadBalancers": [
             {
@@ -10,28 +10,32 @@
                 "containerPort": 4200
             }
         ],
-        "serviceRegistries": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-b4uefiwqi7uz5s2s"
+            }
+        ],
         "status": "ACTIVE",
         "desiredCount": 1,
-        "runningCount": 1,
+        "runningCount": 0,
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:13",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:25",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/8410749923527810865",
+                "id": "ecs-svc/1118326707267710411",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:13",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:25",
                 "desiredCount": 1,
                 "pendingCount": 0,
-                "runningCount": 1,
-                "createdAt": "2020-10-18T13:30:53.617000+05:30",
-                "updatedAt": "2020-10-18T13:50:11.105000+05:30",
+                "runningCount": 0,
+                "createdAt": "2020-10-22T17:44:12.462000+05:30",
+                "updatedAt": "2020-10-22T20:25:11.796000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -51,507 +55,412 @@
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "51ffcf3e-abb9-4de8-8a17-1eb4ec1bd13b",
-                "createdAt": "2020-10-18T13:52:06.173000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "378401bd-f049-446c-ae3d-ffc9346007ad",
+                "createdAt": "2020-10-23T14:26:11.057000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "310566e8-ed85-455a-adc5-af7cc307369b",
-                "createdAt": "2020-10-18T13:50:29.074000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task e4347709-a8d4-4d77-a0b9-9dd3f0bb4380)."
+                "id": "0d8415ac-9bfc-400f-9574-e0b5c18e8ccb",
+                "createdAt": "2020-10-23T08:26:00.951000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "2dac3cbf-1116-4bd9-a8ac-85e4dd19f9cf",
-                "createdAt": "2020-10-18T13:31:20.989000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "dec4dd13-2d1a-40fb-b267-10ac17ec2c67",
+                "createdAt": "2020-10-23T02:25:37.823000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "ec14c915-55f3-4513-bd8c-a7d107ba70f7",
-                "createdAt": "2020-10-18T13:31:11.019000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "f1a01618-3972-4a66-9140-b3b709b3f55c",
+                "createdAt": "2020-10-22T20:25:11.810000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "25dee408-cdc1-443f-b8ce-718c8829da12",
-                "createdAt": "2020-10-18T13:29:38.189000+05:30",
-                "message": "(service service-travel-plan-ui) has begun draining connections on 1 tasks."
+                "id": "499b3e58-b63e-4456-a565-37eaf9f8c8b2",
+                "createdAt": "2020-10-22T20:25:11.444000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "a8b25c06-42d4-456d-a2e6-4a8145b7686e",
-                "createdAt": "2020-10-18T13:29:38.188000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "c1a16c32-941f-4abc-8c85-10411fcfd244",
+                "createdAt": "2020-10-22T20:24:01.459000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "ded85db1-c793-4d27-b5f8-500e24da6410",
-                "createdAt": "2020-10-18T12:16:58.454000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "6f70f469-767e-44b9-a904-980270c4a8a6",
+                "createdAt": "2020-10-22T20:24:01.458000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "6c6ecdab-fc0d-4f4f-8dc8-b351fbeaf21f",
-                "createdAt": "2020-10-18T12:12:32.449000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "518e3f2e-2304-49e4-8a5f-7a4dce609a2b",
+                "createdAt": "2020-10-22T17:56:52.688000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "56272f3b-9270-4826-a93c-0fed59912b31",
-                "createdAt": "2020-10-18T12:12:23.414000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 02e933d3-7ebe-44f2-b7ad-aabb6cb4e7b9)."
+                "id": "1dcd97e9-cba5-4356-b38f-8f9b9f4eda41",
+                "createdAt": "2020-10-22T17:56:30.606000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 875bb073fe164fa3ae1fab3031e809bd)."
             },
             {
-                "id": "25707a60-a9fa-4765-b5ef-45cd6ba3bb9c",
-                "createdAt": "2020-10-18T12:11:45.707000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "a9209059-13da-485d-8c67-4077c212ac94",
+                "createdAt": "2020-10-22T17:51:22.625000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "e6d8888b-d124-44ab-99c9-765664e10545",
-                "createdAt": "2020-10-18T12:10:07.302000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task aad9c14f-85f8-45f1-b680-69597bac34eb)."
+                "id": "683d7fc9-8af0-4de4-a3c3-e00650170293",
+                "createdAt": "2020-10-22T17:51:22.624000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "3cf327b5-e20a-4c6e-b7c9-f5eae0bd0880",
-                "createdAt": "2020-10-18T12:09:08.073000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "41d1bd47-c280-4724-826a-ae2740bdb591",
+                "createdAt": "2020-10-22T17:46:27.608000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "bf23d5af-3613-40d0-92df-0a37fa5b993c",
-                "createdAt": "2020-10-18T12:07:28.560000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 02e933d3-7ebe-44f2-b7ad-aabb6cb4e7b9)."
+                "id": "ed0b059d-27fa-4099-8fb4-10a1a546d064",
+                "createdAt": "2020-10-22T17:44:28.199000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task e443ce3715964b7f89e645e248307d48)."
             },
             {
-                "id": "cda21a82-21be-40f4-b773-47157b9c9746",
-                "createdAt": "2020-10-18T09:55:01.973000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "af21320d-61fc-4d7b-a33c-77d06fad6b32",
+                "createdAt": "2020-10-22T16:55:02.810000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "256a6f29-f137-4b79-af2a-419cbedc222a",
-                "createdAt": "2020-10-18T03:54:55.574000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "514e8d04-e136-4d86-9263-e8c26e53e6d8",
+                "createdAt": "2020-10-22T16:54:40.884000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 7f05014a8a0d4c9a9c4387af58784f7a)."
             },
             {
-                "id": "5436a8b3-4086-49ec-9d65-93b95ea1ba00",
-                "createdAt": "2020-10-17T21:54:25.467000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "9e2e9b10-a1e4-4faa-99d3-61b570d106d9",
+                "createdAt": "2020-10-22T16:49:39.849000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "759bde47-ee1f-44ba-9a02-338b54c76524",
-                "createdAt": "2020-10-17T15:54:22.700000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "be82253b-2780-4713-9974-15f6b98c4efa",
+                "createdAt": "2020-10-22T16:49:39.848000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "3018e0c1-b759-44f4-abfe-fcd5b0d487c5",
-                "createdAt": "2020-10-17T09:53:36.594000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "76009d67-b677-4727-96ad-b45a927470e6",
+                "createdAt": "2020-10-22T16:44:22.922000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "384acd6c-f001-44db-9b22-d7a6b913c073",
-                "createdAt": "2020-10-17T03:53:04.519000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "def86611-79fd-4d66-9108-9c525d539107",
+                "createdAt": "2020-10-22T16:42:25.246000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 875bb073fe164fa3ae1fab3031e809bd)."
             },
             {
-                "id": "ddf0191b-3b2f-401f-b84d-8076d85635dd",
-                "createdAt": "2020-10-16T21:52:37.475000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "ae8aa9c6-f519-4a5f-b29b-5a5b14410bd7",
+                "createdAt": "2020-10-22T16:09:55.073000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "365ba344-fdfa-4dc0-8984-adb8170bf0ba",
-                "createdAt": "2020-10-16T15:52:30.957000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "0a6f16e0-3515-472f-971b-21ac6c6b65c6",
+                "createdAt": "2020-10-22T16:09:33.662000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 6721e15c85334730a637e13d35b7b4af)."
             },
             {
-                "id": "baea42df-78f7-45b9-8316-89ab135dc527",
-                "createdAt": "2020-10-16T09:52:00.782000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "62368ca4-9151-47fb-bf1b-253b9fd57b9e",
+                "createdAt": "2020-10-22T16:04:29.265000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "9fe897db-5746-4b1e-a4a9-f35e81e3f524",
-                "createdAt": "2020-10-16T03:51:14.670000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "e42dcdf2-fea5-41f5-b13f-8d7748e85e61",
+                "createdAt": "2020-10-22T16:04:29.264000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "254c254a-a4e9-4e34-a0f0-3e903d07c3c7",
-                "createdAt": "2020-10-15T21:50:52.387000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "0ee96ff3-6e57-434b-a958-89209bd0d2ed",
+                "createdAt": "2020-10-22T15:59:34.645000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "ba634b08-0a24-4d76-b8a4-df44167d47f7",
-                "createdAt": "2020-10-15T15:50:34.641000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "682850f3-95f1-4ce0-84dd-9757e8e086fe",
+                "createdAt": "2020-10-22T15:57:26.654000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 7f05014a8a0d4c9a9c4387af58784f7a)."
             },
             {
-                "id": "d39a528f-b17c-459a-a68e-e1793ecae900",
-                "createdAt": "2020-10-15T09:49:49.293000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "41c1ae42-757c-462e-b6d6-e5339e9ce114",
+                "createdAt": "2020-10-22T15:26:27.842000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "3f8515b5-4b6c-4c35-95ca-7d9c331a177e",
-                "createdAt": "2020-10-15T03:49:44.548000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "e1d7dca9-6435-4d58-8823-ef1bbe4b79b9",
+                "createdAt": "2020-10-22T15:26:08.550000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 1a08682b6c96463f90567f4de97ebc24)."
             },
             {
-                "id": "3371f9bd-4d5c-4f6e-9f35-b7d60be5dad8",
-                "createdAt": "2020-10-14T21:49:02.222000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "4552dc5b-79ac-43c1-b3c9-988325293f8f",
+                "createdAt": "2020-10-22T15:20:57.770000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "db0746b8-6a07-4bf9-8a3b-f8dca3f9eddc",
-                "createdAt": "2020-10-14T21:49:00.223000+05:30",
-                "message": "(service service-travel-plan-ui) has begun draining connections on 1 tasks."
+                "id": "6e0b70b1-fc66-4ede-89fa-68e029887385",
+                "createdAt": "2020-10-22T15:20:57.769000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "7b36c437-cd7e-43fc-8090-9f2ce7ede9d4",
-                "createdAt": "2020-10-14T21:49:00.207000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "975862eb-2292-48b2-a06e-4d69fbd0c6a5",
+                "createdAt": "2020-10-22T15:15:57.222000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "caded688-54b4-4603-9543-94688544a755",
-                "createdAt": "2020-10-14T21:48:52.450000+05:30",
-                "message": "(service service-travel-plan-ui) has begun draining connections on 1 tasks."
+                "id": "dc5d7856-ede4-4c7e-b13b-df72379fb27c",
+                "createdAt": "2020-10-22T15:14:02.518000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 6721e15c85334730a637e13d35b7b4af)."
             },
             {
-                "id": "beeebbf8-e814-4aff-8a4d-b7e3d93a4ff2",
-                "createdAt": "2020-10-14T21:48:52.449000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "d4c4ce70-0cef-46c2-9483-c9b598524f73",
+                "createdAt": "2020-10-22T12:37:42.247000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "637f9979-8fa8-4868-968a-693409f255ef",
-                "createdAt": "2020-10-14T18:42:36.030000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "51221d66-198a-4d02-95e5-8762c2c0d7f2",
+                "createdAt": "2020-10-22T12:34:19.645000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "511a08a1-ce18-404c-9524-656ef859d44e",
-                "createdAt": "2020-10-14T18:38:23.353000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "6242d55e-aa0f-41bb-8340-46d8d82f43d2",
+                "createdAt": "2020-10-22T12:33:09.920000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "36c64b6c-3e50-4959-9e1d-79bb1e07a487",
-                "createdAt": "2020-10-14T18:36:45.850000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 8bc23505-1827-4076-b7bb-0f7c7188e87a)."
+                "id": "899f63ef-d340-4d9c-8700-9aba8ef3d2c8",
+                "createdAt": "2020-10-22T12:32:57.567000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 78d140b1eaab4ced8dc5127523e3de35)."
             },
             {
-                "id": "ade1f181-1235-4f12-8f70-5c0c64a46113",
-                "createdAt": "2020-10-14T18:19:11.707000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "8c4b11d8-2d0f-4786-9ccf-41020ceb3bae",
+                "createdAt": "2020-10-22T12:32:00.042000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 1a08682b6c96463f90567f4de97ebc24)."
             },
             {
-                "id": "7a58fb1b-3799-4e9e-8c08-4025c9d3a06e",
-                "createdAt": "2020-10-14T12:18:30.711000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "d1356a6d-b489-4bda-a8c4-f7d171a82f69",
+                "createdAt": "2020-10-22T12:31:47.878000+05:30",
+                "message": "(service f-srv-ui) stopped 1 pending tasks."
             },
             {
-                "id": "c44ba428-342c-4a7b-97fc-bae5f3610cb3",
-                "createdAt": "2020-10-14T06:17:59.080000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "72f2f3f5-40c4-4f51-8abb-677c3fd1547d",
+                "createdAt": "2020-10-22T12:30:19.268000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 1c5d38c404594597a68f93f285da3491)."
             },
             {
-                "id": "c1f8b378-619c-4b3e-b97a-4ab483661e65",
-                "createdAt": "2020-10-14T00:17:37.535000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "07dd6ff2-a27c-4d84-af52-f7512719fb15",
+                "createdAt": "2020-10-22T12:29:44.532000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "d2487c60-517b-43f9-bd03-e1f23430b569",
-                "createdAt": "2020-10-13T18:17:35.298000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "e2cb8b96-0f0e-4e91-9301-3afeb7fd1b2c",
+                "createdAt": "2020-10-22T12:27:53.599000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 78d140b1eaab4ced8dc5127523e3de35)."
             },
             {
-                "id": "faf4ddd6-9c72-45ae-b8e0-91fbcce692dd",
-                "createdAt": "2020-10-13T18:17:31.580000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "bc7899ce-a343-45c2-9862-804ac1cd8b58",
+                "createdAt": "2020-10-22T12:27:43.900000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task c597014574f64a7289ba0c6ab732ad14)."
             },
             {
-                "id": "a4aa7327-bc99-474a-bee4-5631dde87238",
-                "createdAt": "2020-10-13T18:15:07.176000+05:30",
-                "message": "(service service-travel-plan-ui) has begun draining connections on 1 tasks."
+                "id": "e682767a-c57c-40e1-9052-c4d0400c5bf7",
+                "createdAt": "2020-10-22T12:27:43.869000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "9709af7d-e2de-482d-a1e5-a26ae0cf9983",
-                "createdAt": "2020-10-13T18:15:07.175000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "fdcdc614-8d33-4b99-8e05-8b68bd77de26",
+                "createdAt": "2020-10-22T12:27:43.833000+05:30",
+                "message": "(service f-srv-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed with these codes: [404])."
             },
             {
-                "id": "04586391-48f9-4b91-b032-04e31902dd93",
-                "createdAt": "2020-10-13T16:14:26.348000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "e886e7cb-be83-48a7-b1ec-3dc4a20fab23",
+                "createdAt": "2020-10-22T12:15:47.347000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "aa501c59-cd71-4479-a4a9-13cdaed5b97c",
-                "createdAt": "2020-10-13T16:10:05.080000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "a8601ea2-5160-4775-a09f-27e37fdfbfdf",
+                "createdAt": "2020-10-22T12:15:47.337000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "d2da883a-7a87-4af8-a65d-e4acb37a30ea",
-                "createdAt": "2020-10-13T16:08:27.683000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task f2a43e96-50d4-4c6d-b1b0-c2408ed3bf5a)."
+                "id": "004be2e2-5b15-4c3d-a1cb-c3e3fe3317de",
+                "createdAt": "2020-10-22T12:11:01.159000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "537cdfc2-365e-44c2-813f-2748d6a9e4af",
-                "createdAt": "2020-10-13T11:15:34.183000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "f5505dbc-68da-4a7b-8932-6dbb2293fbd6",
+                "createdAt": "2020-10-22T12:08:57.683000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task c597014574f64a7289ba0c6ab732ad14)."
             },
             {
-                "id": "71cfcfc5-90c0-49e1-965e-040438de4121",
-                "createdAt": "2020-10-13T05:15:05.957000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "e39846e4-849c-43fe-a630-1fa1ec5d2865",
+                "createdAt": "2020-10-22T11:13:27.527000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "f562e6f7-6633-46a5-8925-adac0eb5d8ba",
-                "createdAt": "2020-10-12T23:14:24.045000+05:30",
-                "message": "(service service-travel-plan-ui) has reached a steady state."
+                "id": "60bd6386-916f-4017-ac29-fee911d20522",
+                "createdAt": "2020-10-22T11:11:19.739000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "950aabfb-d37e-4bc1-bc8f-f18a0efa58da",
-                "createdAt": "2020-10-12T23:13:44.135000+05:30",
-                "message": "(service service-travel-plan-ui) stopped 1 pending tasks."
+                "id": "5d1de4c6-e7f2-45bc-a49c-b002ac70fcaa",
+                "createdAt": "2020-10-22T11:11:19.733000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "a57d2112-ce37-42e9-b1fb-1ffb3de52fe5",
-                "createdAt": "2020-10-12T23:12:55.540000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 3b7bb07e-da5e-4efe-832d-78fc6102fd5d)."
+                "id": "35bad594-a555-4688-88bc-f653e17402ca",
+                "createdAt": "2020-10-22T11:08:26.868000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "69802136-1bc2-4a3b-a467-e8a51f688612",
-                "createdAt": "2020-10-12T23:12:55.284000+05:30",
-                "message": "(service service-travel-plan-ui) has begun draining connections on 1 tasks."
+                "id": "9f0e7d94-4ee8-49c4-83a8-4160f472c2de",
+                "createdAt": "2020-10-22T11:06:25.728000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 51d748f2e9cf430bb9636707a1b05cc9)."
             },
             {
-                "id": "7bd3cf5b-2ba9-457d-a546-bbc85168fcc9",
-                "createdAt": "2020-10-12T23:12:55.270000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "5b7b626b-370e-49b0-83ee-0b0c1d26e9cb",
+                "createdAt": "2020-10-22T09:33:35.876000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "7835ba6e-e6b9-49a0-a744-e793bc85be8a",
-                "createdAt": "2020-10-12T23:12:36.543000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 148a0670-e901-4cf0-bdd5-de10ae831a00)."
+                "id": "f4d38a3e-03da-42dd-a985-743bbf1a70dc",
+                "createdAt": "2020-10-22T09:30:00.666000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "8be70168-ab1b-42bd-af4a-f6219c7ffb26",
-                "createdAt": "2020-10-12T23:12:36.513000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "ff6cdb7a-7b67-42aa-8b32-13189d7387ee",
+                "createdAt": "2020-10-22T09:27:51.661000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task b24503caf4e34171826ef1228b621724)."
             },
             {
-                "id": "80af96a7-e319-49b8-8344-6ce0584c0e6e",
-                "createdAt": "2020-10-12T23:12:36.481000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
+                "id": "d7237050-9d29-49e3-98d0-51a48f8b9330",
+                "createdAt": "2020-10-22T04:56:01.333000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "90b06b25-9f61-4946-841d-b109436f3185",
-                "createdAt": "2020-10-12T23:09:22.888000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "d8dc18c7-1920-41cd-a7f3-ffc66efee3a5",
+                "createdAt": "2020-10-21T22:55:44.866000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "acb385ef-dfb2-44ae-b780-956c4cc44a6d",
-                "createdAt": "2020-10-12T23:07:45.699000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 148a0670-e901-4cf0-bdd5-de10ae831a00)."
+                "id": "ca514e4b-2f66-4e06-bcbb-4c6c4f4e9257",
+                "createdAt": "2020-10-21T22:55:26.761000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "30b40e5f-c328-4c92-a1cf-f94ad34cb457",
-                "createdAt": "2020-10-12T23:07:25.611000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task a4c96ed9-071a-4126-b897-767e9725b64b)."
+                "id": "e422aceb-e3db-4176-b4c8-7488d11c857e",
+                "createdAt": "2020-10-21T22:55:26.752000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "174f5b7d-1f57-4d81-94da-2585ae332ff1",
-                "createdAt": "2020-10-12T23:07:25.584000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "2a936fe4-1be2-4ea4-abdf-a5e55e187f71",
+                "createdAt": "2020-10-21T22:19:27.792000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "df274c20-3111-4e0e-82ba-b66bd77dbe4f",
-                "createdAt": "2020-10-12T23:07:25.553000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
+                "id": "454ba6c3-3537-4ea1-8160-9661177328c8",
+                "createdAt": "2020-10-21T22:19:05.472000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "b62a3203-02d8-4629-bf44-24c75a29fae9",
-                "createdAt": "2020-10-12T23:04:09.077000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "278d2502-aada-49ff-948b-7818888fe930",
+                "createdAt": "2020-10-21T22:14:03.116000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "34282028-aca6-416c-a4c4-356f4d24a07a",
-                "createdAt": "2020-10-12T23:02:35.608000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task a4c96ed9-071a-4126-b897-767e9725b64b)."
+                "id": "d12e0c39-1c2d-430e-b23c-fac63727efca",
+                "createdAt": "2020-10-21T22:14:03.115000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "efbab648-ef47-4724-a024-d3874a543dc4",
-                "createdAt": "2020-10-12T23:02:15.440000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 4858e07c-93d3-466a-8884-6c40c017cdd3)."
+                "id": "c5ce385d-0cba-4831-bbf0-b58ffccd4b3b",
+                "createdAt": "2020-10-21T17:49:21.891000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "8739bdce-7f27-421e-8ee2-0335101ced4a",
-                "createdAt": "2020-10-12T23:02:15.414000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "abd6cd4a-5e45-42ba-895d-46b387bc3830",
+                "createdAt": "2020-10-21T17:45:43.157000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "3525a3c4-8536-4abf-b69f-a7942bfdfaaa",
-                "createdAt": "2020-10-12T23:02:15.387000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
+                "id": "7f7d6e1f-1ece-4efe-a9a9-4516b3db5b11",
+                "createdAt": "2020-10-21T17:43:38.788000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task d8bf89f6-e57a-4ea2-8344-71b4d2a43c7f)."
             },
             {
-                "id": "0e58ec70-277c-43d6-aad1-d36fc77f5acf",
-                "createdAt": "2020-10-12T22:58:59.461000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "a833b6ca-a0ee-4cca-b9da-70af112c8020",
+                "createdAt": "2020-10-21T17:32:23.079000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "463fbfa9-c365-4b4c-b752-dbf7a4077c6d",
-                "createdAt": "2020-10-12T22:57:31.698000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 4858e07c-93d3-466a-8884-6c40c017cdd3)."
+                "id": "9557a320-3202-4722-bb06-22e4f6766480",
+                "createdAt": "2020-10-21T11:31:40.352000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "c3253117-dc53-413f-b985-82d445ed1fe7",
-                "createdAt": "2020-10-12T22:57:12.170000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task f468534d-80ad-44d4-be5c-b5957bbea892)."
+                "id": "61bd8f25-f955-4aa4-8644-ec6c2c9f7d85",
+                "createdAt": "2020-10-21T05:31:35.524000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "260c121f-7f81-4902-9cbc-3ff1bbb754c9",
-                "createdAt": "2020-10-12T22:57:12.145000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "9a898c85-d55c-4ac6-a53e-ad99787104c7",
+                "createdAt": "2020-10-20T23:31:28.002000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "324b0338-369a-4ad8-8779-fb42a2d4d3f1",
-                "createdAt": "2020-10-12T22:57:12.112000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Request timed out)."
+                "id": "8138245c-1228-4a94-a5bb-c805103f2cc8",
+                "createdAt": "2020-10-20T17:30:56.924000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "a3752a8b-4680-4063-9dca-cde2e8c50b11",
-                "createdAt": "2020-10-12T22:53:42.784000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "0974dad1-51b3-47e1-80a6-f0b6d9a1ccde",
+                "createdAt": "2020-10-20T17:30:50.201000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "b327b674-20a0-452e-8364-9eab0cf73815",
-                "createdAt": "2020-10-12T22:51:56.433000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task f468534d-80ad-44d4-be5c-b5957bbea892)."
+                "id": "be5b1c39-d2ed-4c45-86d7-10c2c1504818",
+                "createdAt": "2020-10-20T17:30:45.530000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
             },
             {
-                "id": "e43f6838-5fe9-4b7d-afc7-31c7f198c7c5",
-                "createdAt": "2020-10-12T22:51:37.260000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 4da18a86-2b92-4ee0-a494-ce65584747ca)."
+                "id": "5be3a8be-d2e2-4934-8f64-a0163bb67cde",
+                "createdAt": "2020-10-20T17:30:45.529000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "0c29fc44-6f82-49b6-8439-5027befaf9a6",
-                "createdAt": "2020-10-12T22:51:37.233000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "9e4e0abb-f6af-43d9-9e0c-17664fa2ed6c",
+                "createdAt": "2020-10-20T14:37:16.787000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
             },
             {
-                "id": "0d2149e9-d93b-4676-82a8-bf2c388b3243",
-                "createdAt": "2020-10-12T22:51:37.199000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Request timed out)."
+                "id": "88ef4c0d-0f19-4b14-b8ee-f20e8c3d9f03",
+                "createdAt": "2020-10-20T14:32:20.674000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "bf3623ce-f125-44f4-bf74-9080bb7460b8",
-                "createdAt": "2020-10-12T22:48:10.794000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "986f7cb1-8580-49e8-a540-b377611f95c0",
+                "createdAt": "2020-10-20T14:30:36.926000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "1105c3a5-ec14-4841-8d74-3fe77406fb94",
-                "createdAt": "2020-10-12T22:46:40.202000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 4da18a86-2b92-4ee0-a494-ce65584747ca)."
+                "id": "f6a06d12-d719-4e11-ba5f-4067dd901e28",
+                "createdAt": "2020-10-20T14:30:26.002000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 62a642ce-22bf-47fc-a68c-c297c556a9cc)."
             },
             {
-                "id": "a6082706-4ed0-4115-9b62-7f6b5bd5ef81",
-                "createdAt": "2020-10-12T22:46:20.640000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 56c03c7e-5802-4846-a943-b4e95ea474d7)."
+                "id": "dfb72753-760a-4824-8138-1ea54698e51d",
+                "createdAt": "2020-10-20T14:30:14.811000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 0f2a3927-7ac2-403f-810d-05f5227f1393)."
             },
             {
-                "id": "311c942f-aaa6-48fd-bd36-16b419d03cef",
-                "createdAt": "2020-10-12T22:46:20.612000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "e8fe5f4a-e546-422f-ac70-1175480a7e6d",
+                "createdAt": "2020-10-20T14:27:02.429000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
             },
             {
-                "id": "da770d94-b353-4e6a-9fe0-ae590b70bff2",
-                "createdAt": "2020-10-12T22:46:20.586000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
-            },
-            {
-                "id": "6fbc10e0-df83-4d7d-a0e8-0336fc470980",
-                "createdAt": "2020-10-12T22:43:03.514000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "9b9eda5e-e0f8-4699-9b1e-e1b6585de39d",
-                "createdAt": "2020-10-12T22:41:36.190000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 56c03c7e-5802-4846-a943-b4e95ea474d7)."
-            },
-            {
-                "id": "5768a8e0-9876-4d7e-b123-1dd40dc112c1",
-                "createdAt": "2020-10-12T22:41:16.150000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task e4bcd5dc-c9dc-42f2-b65c-fde6cb5d7d0b)."
-            },
-            {
-                "id": "9a911d49-742a-4e78-a077-31679b2ad6ea",
-                "createdAt": "2020-10-12T22:41:16.126000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "38d0ae08-5952-453e-9c0e-8b9c5bcbaf0a",
-                "createdAt": "2020-10-12T22:41:16.100000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
-            },
-            {
-                "id": "013b353f-cced-4811-a59b-651ab52ae6c7",
-                "createdAt": "2020-10-12T22:37:57.304000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "3414b6aa-06b3-467b-a041-e4c18a250da9",
-                "createdAt": "2020-10-12T22:36:25.689000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task e4bcd5dc-c9dc-42f2-b65c-fde6cb5d7d0b)."
-            },
-            {
-                "id": "3e598a55-41af-48d3-8faf-152100ee5898",
-                "createdAt": "2020-10-12T22:36:06.284000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task d14095a0-20b1-48ff-a737-b5e8412a2bca)."
-            },
-            {
-                "id": "8931eade-6180-4b49-8409-b930a6d1f386",
-                "createdAt": "2020-10-12T22:36:06.259000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "4d442f3b-55e7-42d0-96da-f2711de80860",
-                "createdAt": "2020-10-12T22:36:06.223000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
-            },
-            {
-                "id": "fa564c85-1e77-4c66-a76c-2198b3f19d9d",
-                "createdAt": "2020-10-12T22:32:47.382000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "2fcdac0f-bf33-4185-a1ac-7b07004977ba",
-                "createdAt": "2020-10-12T22:31:14.028000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task d14095a0-20b1-48ff-a737-b5e8412a2bca)."
-            },
-            {
-                "id": "68560eb9-8f87-432d-a68f-88ec3304f5f1",
-                "createdAt": "2020-10-12T22:30:53.493000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task 02d0a5a8-a04d-4708-8536-749e969e0429)."
-            },
-            {
-                "id": "5153c6ee-8850-4aa0-9fac-536c5640a983",
-                "createdAt": "2020-10-12T22:30:53.468000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "c3ffb539-7d65-4fa2-a957-d62c3faa5699",
-                "createdAt": "2020-10-12T22:30:53.437000+05:30",
-                "message": "(service service-travel-plan-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed)."
-            },
-            {
-                "id": "385ddfb1-056f-46fd-98e4-1d65a5080920",
-                "createdAt": "2020-10-12T22:27:41.043000+05:30",
-                "message": "(service service-travel-plan-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "7450c800-9c35-46af-b552-e70ef9da4932",
-                "createdAt": "2020-10-12T22:26:03.564000+05:30",
-                "message": "(service service-travel-plan-ui) has started 1 tasks: (task 02d0a5a8-a04d-4708-8536-749e969e0429)."
-            },
-            {
-                "id": "fb20b9ad-eb02-4f74-9410-089122d1f149",
-                "createdAt": "2020-10-12T22:25:41.494000+05:30",
-                "message": "(service service-travel-plan-ui) has stopped 1 running tasks: (task ff5fae68-1e07-4ac9-a3a8-28af4cd322e3)."
-            },
-            {
-                "id": "e69b1519-e6f2-41b8-b4f4-f5e0007ef80a",
-                "createdAt": "2020-10-12T22:25:41.467000+05:30",
-                "message": "(service service-travel-plan-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+                "id": "d2dce443-7ed5-4956-a440-c2fc3fe3b156",
+                "createdAt": "2020-10-20T14:24:55.210000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 62a642ce-22bf-47fc-a68c-c297c556a9cc)."
             }
         ],
-        "createdAt": "2020-10-12T18:27:10.421000+05:30",
+        "createdAt": "2020-10-20T14:24:47.237000+05:30",
         "placementConstraints": [],
         "placementStrategy": [],
         "networkConfiguration": {
