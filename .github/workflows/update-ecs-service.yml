@@ -33,5 +33,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Shut-down service
         run: |
-          sh shutdown-service.sh
+          sh service-up.sh
  
