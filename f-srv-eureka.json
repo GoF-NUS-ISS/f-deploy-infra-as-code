@@ -10,7 +10,7 @@
             }
         ],
         "status": "ACTIVE",
-        "desiredCount": 1,
+        "desiredCount": 0,
         "runningCount": 0,
         "pendingCount": 0,
         "launchType": "FARGATE",
@@ -25,11 +25,11 @@
                 "id": "ecs-svc/3156624167791094916",
                 "status": "PRIMARY",
                 "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-eureka-api:5",
-                "desiredCount": 1,
+                "desiredCount": 0,
                 "pendingCount": 0,
                 "runningCount": 0,
                 "createdAt": "2020-10-21T21:38:04.469000+05:30",
-                "updatedAt": "2020-10-22T20:24:24.022000+05:30",
+                "updatedAt": "2020-10-26T18:40:02.669000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -48,6 +48,121 @@
         ],
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
+            {
+                "id": "5a7d2f57-56fb-4437-a2a6-30f5aeaad341",
+                "createdAt": "2020-10-27T18:28:56.212000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "d8745d26-1c23-40fe-a42a-ae67f6a937dd",
+                "createdAt": "2020-10-27T12:28:41.882000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "dd1ef237-53f7-4b38-8265-7fa10aca8552",
+                "createdAt": "2020-10-27T06:28:36.626000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "cbb1cdff-e3f6-4f15-a44e-12780f1938b0",
+                "createdAt": "2020-10-27T00:28:25.397000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "007821c3-e83e-427f-8b9c-fa314c90b807",
+                "createdAt": "2020-10-26T18:27:56.835000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "cef91874-7c16-4cac-a9d2-016483f29b80",
+                "createdAt": "2020-10-26T18:27:45.486000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 8be8fb07b02048fd9f1e4a23f0938452)."
+            },
+            {
+                "id": "ef0672ab-69b8-4420-8262-6739fa5ec050",
+                "createdAt": "2020-10-26T14:42:10.708000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "b3608bb0-75df-414a-98fd-cd47ab8b8a0e",
+                "createdAt": "2020-10-26T08:42:08.650000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "a649c8b9-39f1-4b63-9991-018edac6150d",
+                "createdAt": "2020-10-26T08:40:12.082000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 8be8fb07b02048fd9f1e4a23f0938452)."
+            },
+            {
+                "id": "6f5355aa-c01a-4d07-b4c8-c6ea21ba4bee",
+                "createdAt": "2020-10-26T05:02:35.348000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "e4ecf322-a9fe-4534-b836-f83be9a9b514",
+                "createdAt": "2020-10-25T23:02:17.624000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "972be4ad-2337-45a5-8f36-65d5d460afa9",
+                "createdAt": "2020-10-25T17:02:13.517000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "10ba2703-7bb2-4652-b6e8-9c4f7837e243",
+                "createdAt": "2020-10-25T11:02:12.433000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "b694bd29-0817-4dee-b6c1-aa983b55dd77",
+                "createdAt": "2020-10-25T05:01:42.116000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "8a0a28d7-bd0c-4efa-b3cf-ba57f8ad1e70",
+                "createdAt": "2020-10-24T23:01:39.529000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "8702eecc-05cd-463d-a3c4-1ed081c14a70",
+                "createdAt": "2020-10-24T17:01:10.990000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "00276982-754b-47ea-a23c-1e154868800f",
+                "createdAt": "2020-10-24T11:00:52.354000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "2f86b40b-965b-4874-89ef-32daada137fd",
+                "createdAt": "2020-10-24T05:00:29.921000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "04674327-bc19-45d6-b9f0-a23123ae0533",
+                "createdAt": "2020-10-23T23:00:14.767000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "2bfe7de2-a7b8-48cd-86f7-b68db72a3cab",
+                "createdAt": "2020-10-23T23:00:05.082000+05:30",
+                "message": "(service f-srv-eureka) has stopped 1 running tasks: (task 2986cf708770451eaf76a58247b06cd9)."
+            },
+            {
+                "id": "a98483a2-b2d3-46f2-be78-e1bb51ec642c",
+                "createdAt": "2020-10-23T22:13:05.457000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "75a46a50-f4d6-4b6e-adbe-eab0bbc296b4",
+                "createdAt": "2020-10-23T16:12:37.955000+05:30",
+                "message": "(service f-srv-eureka) has reached a steady state."
+            },
+            {
+                "id": "4efe7d13-1e8b-4cc0-aa81-2f2af9eb380d",
+                "createdAt": "2020-10-23T16:10:49.616000+05:30",
+                "message": "(service f-srv-eureka) has started 1 tasks: (task 2986cf708770451eaf76a58247b06cd9)."
+            },
             {
                 "id": "d5027544-8066-4fe4-b011-edca49e86050",
                 "createdAt": "2020-10-23T14:25:35.682000+05:30",
@@ -432,26 +547,6 @@
                 "id": "d35691c9-f3db-4ff4-b63b-4053851f226d",
                 "createdAt": "2020-10-16T19:35:13.510000+05:30",
                 "message": "(service f-srv-eureka) has started 1 tasks: (task 3ffba1dd-bf92-48e7-bc0d-5d12a6281791)."
-            },
-            {
-                "id": "a24eb8b1-c499-49f1-82c5-926883a36a9d",
-                "createdAt": "2020-10-16T19:33:12.879000+05:30",
-                "message": "(service f-srv-eureka) has started 1 tasks: (task df46a51e-281e-48a7-84f4-cf1a79480558)."
-            },
-            {
-                "id": "7eee8e88-2a03-48fc-b194-b40dbdf4e70e",
-                "createdAt": "2020-10-16T19:30:25.865000+05:30",
-                "message": "(service f-srv-eureka) has started 1 tasks: (task ee79ebc7-63a6-475b-b14c-fc1f0c90f38e)."
-            },
-            {
-                "id": "5febb615-dd01-4c5e-b378-4c98cc068fca",
-                "createdAt": "2020-10-16T19:28:15.922000+05:30",
-                "message": "(service f-srv-eureka) has started 1 tasks: (task ce7f7c73-ad74-41f0-b186-b596ee3b4b18)."
-            },
-            {
-                "id": "a496d523-cb69-46b4-8060-db0d73918a96",
-                "createdAt": "2020-10-16T19:26:14.313000+05:30",
-                "message": "(service f-srv-eureka) has started 1 tasks: (task 26fca840-5a8d-4e8a-8e93-f499f4a8cf5d)."
             }
         ],
         "createdAt": "2020-10-16T19:26:04.901000+05:30",

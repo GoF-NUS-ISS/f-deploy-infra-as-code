@@ -16,26 +16,26 @@
             }
         ],
         "status": "ACTIVE",
-        "desiredCount": 1,
-        "runningCount": 0,
+        "desiredCount": 0,
+        "runningCount": 1,
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:25",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:33",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/1118326707267710411",
+                "id": "ecs-svc/9094846114750760573",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:25",
-                "desiredCount": 1,
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/ui-travel-app-task-definition:33",
+                "desiredCount": 0,
                 "pendingCount": 0,
-                "runningCount": 0,
-                "createdAt": "2020-10-22T17:44:12.462000+05:30",
-                "updatedAt": "2020-10-22T20:25:11.796000+05:30",
+                "runningCount": 1,
+                "createdAt": "2020-10-26T15:21:55.312000+05:30",
+                "updatedAt": "2020-10-27T15:24:22.302000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -54,6 +54,391 @@
         ],
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
+            {
+                "id": "563793b0-6064-46e6-9450-26b686b1d98d",
+                "createdAt": "2020-10-27T15:24:22.316000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "d88a0850-a130-4a07-aeab-3a19575362c7",
+                "createdAt": "2020-10-27T15:20:50.246000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "0da077bf-8124-4757-b539-60f832d44846",
+                "createdAt": "2020-10-27T15:18:46.086000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task e0e0d5f360f84952a146776f14e7afc1)."
+            },
+            {
+                "id": "c2800837-eedf-4d16-a7c7-b0db12e74b43",
+                "createdAt": "2020-10-27T12:28:33.451000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "6205edf5-7fa5-417e-bda6-2e9676e5b6a1",
+                "createdAt": "2020-10-27T06:28:29.520000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "0f1f0264-ad87-455c-b7f6-27a2c2b49c3b",
+                "createdAt": "2020-10-27T00:28:26.889000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "db59b838-8d3b-4fa5-aaf2-9d9db790f7c1",
+                "createdAt": "2020-10-26T18:27:49.440000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "d40cc5c8-1423-45d2-9ef9-25912fa5e342",
+                "createdAt": "2020-10-26T18:27:39.714000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 5b3b4ae5fe83474e82ad21167368cada)."
+            },
+            {
+                "id": "9970b8e4-4552-4712-8201-105cd8fdb7b1",
+                "createdAt": "2020-10-26T18:22:35.980000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "83778bcb-c294-4e8e-8ba0-f0de0d39608a",
+                "createdAt": "2020-10-26T18:22:35.979000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "7983a33d-b3e4-44b5-bba6-f6a086f74000",
+                "createdAt": "2020-10-26T15:34:35.288000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "60c99997-2e3b-4e6b-8734-5fca31018c52",
+                "createdAt": "2020-10-26T15:34:16.002000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 63d86985c2e2420bafed2d6c88d9c2f6)."
+            },
+            {
+                "id": "35326246-5a98-46c0-87ad-bc66ea1a532d",
+                "createdAt": "2020-10-26T15:29:11.761000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "772c2035-a44f-4786-8002-0f90dd29deff",
+                "createdAt": "2020-10-26T15:29:11.760000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "79c1b5b3-f29d-414c-adf7-591a30f645e4",
+                "createdAt": "2020-10-26T15:24:18.335000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "757b7995-5c54-4bcb-9af7-d3434af5192e",
+                "createdAt": "2020-10-26T15:22:16.792000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 5b3b4ae5fe83474e82ad21167368cada)."
+            },
+            {
+                "id": "c1443ad7-cad4-4a1a-b1c9-d0d73d1dbe82",
+                "createdAt": "2020-10-26T14:30:01.133000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "0b1a2a2f-897c-4bec-a799-a96077bf28f6",
+                "createdAt": "2020-10-26T14:29:41.495000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 476a4c75e28d4cbeb62417dad9114a14)."
+            },
+            {
+                "id": "49549635-495a-4d80-9d1a-4f44b5cd7608",
+                "createdAt": "2020-10-26T14:24:38.496000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "e0ef9a91-517e-4509-af1d-e7e246b7e712",
+                "createdAt": "2020-10-26T14:24:38.495000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "a97b4999-d0f0-49fd-ab4f-e985dc2f4608",
+                "createdAt": "2020-10-26T14:19:43.321000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "0a6543cb-6920-4d51-9e55-e0b226f8a218",
+                "createdAt": "2020-10-26T14:17:24.330000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 63d86985c2e2420bafed2d6c88d9c2f6)."
+            },
+            {
+                "id": "7df269ed-74ec-4485-92c1-c6e3543875c2",
+                "createdAt": "2020-10-26T13:37:02.152000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "58c87bfd-da60-4ef3-9a70-6c16d51e7626",
+                "createdAt": "2020-10-26T13:36:43.007000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 0fb0604d0a8a438aa80ce11525a5e3b1)."
+            },
+            {
+                "id": "5cf208fe-088c-4a52-8b75-410280fc795c",
+                "createdAt": "2020-10-26T13:31:41.611000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "6ec1123a-c0bd-4a98-a1cf-c78cec1348fa",
+                "createdAt": "2020-10-26T13:31:41.610000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "7b94d7a2-5ca6-4410-9013-8419b6822968",
+                "createdAt": "2020-10-26T13:26:39.402000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "77302668-d190-413a-9195-7a60e7941756",
+                "createdAt": "2020-10-26T13:24:39.884000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 476a4c75e28d4cbeb62417dad9114a14)."
+            },
+            {
+                "id": "b101f13c-5fc0-4e88-9bde-65ac4331a9f3",
+                "createdAt": "2020-10-26T10:22:41.011000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "db6af772-ec6e-4cd4-91ea-fda0eec1f819",
+                "createdAt": "2020-10-26T10:22:21.396000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task fcd6d8b939a74ef49969cb28cb4b9070)."
+            },
+            {
+                "id": "efe108e0-af04-4420-a4cb-84a1d1aca839",
+                "createdAt": "2020-10-26T10:17:19.156000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "f85e18f8-04c3-4724-a785-cd4f7411b5ac",
+                "createdAt": "2020-10-26T10:17:19.155000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "a8053159-8bde-4e9c-bdbb-db1ed4bad18c",
+                "createdAt": "2020-10-26T10:12:25.336000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "c4b5ef9e-731a-48ea-a5be-c5d610bf2276",
+                "createdAt": "2020-10-26T10:10:17.859000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 0fb0604d0a8a438aa80ce11525a5e3b1)."
+            },
+            {
+                "id": "5074687a-d775-4c82-8eeb-2b05790d48dc",
+                "createdAt": "2020-10-26T09:39:48.982000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "d385f324-54b6-4afd-ae0a-e18cbe95c85b",
+                "createdAt": "2020-10-26T09:39:29.342000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 96b030d99025417ebfe0484c2d2ae840)."
+            },
+            {
+                "id": "838ea8e6-89df-4145-88cd-a216c4d2e2ae",
+                "createdAt": "2020-10-26T09:34:25.156000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "0ae1ec9f-7e6b-4b1b-a1d4-89736a764a3d",
+                "createdAt": "2020-10-26T09:34:25.155000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "3e318e55-f8a5-4725-baba-d24930647bf9",
+                "createdAt": "2020-10-26T09:29:24.069000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "bd72e26a-ac67-4beb-8afb-da3aa6df5a05",
+                "createdAt": "2020-10-26T09:27:16.937000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task fcd6d8b939a74ef49969cb28cb4b9070)."
+            },
+            {
+                "id": "6c0ff66c-8a53-4605-a9f4-050bfd5616c2",
+                "createdAt": "2020-10-26T08:45:44.874000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "17421820-c4d3-4783-99cd-d3fcb0ebe6f6",
+                "createdAt": "2020-10-26T08:42:10.548000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "cd1a7734-cb6f-4018-aea2-f35af223de98",
+                "createdAt": "2020-10-26T08:40:15.278000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 96b030d99025417ebfe0484c2d2ae840)."
+            },
+            {
+                "id": "803c8469-225f-4dac-bfd3-38e66e3b6172",
+                "createdAt": "2020-10-26T05:26:48.082000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "83bb2f7a-abbc-4fd7-bdb6-bb97505b3390",
+                "createdAt": "2020-10-25T23:26:45.803000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "f9a1abfa-fa0f-4c38-93d7-2729715347d0",
+                "createdAt": "2020-10-25T23:26:36.653000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 6b11d3d4dbd741a990534b136e6f0e6d)."
+            },
+            {
+                "id": "235e5c13-849a-4e56-86bb-505f8b776e77",
+                "createdAt": "2020-10-25T23:21:33.135000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "6f86f509-ef07-4340-8d1b-e474653b0e17",
+                "createdAt": "2020-10-25T23:21:33.134000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "8bbf7f52-4f8b-410c-91a1-f455f007a699",
+                "createdAt": "2020-10-25T20:40:29.782000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "2c1a8358-31c5-43c7-94de-baeedeb79f57",
+                "createdAt": "2020-10-25T14:39:41.808000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "715fb564-398c-4e8f-a092-0d700994b5a1",
+                "createdAt": "2020-10-25T14:36:12.516000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "efb19bd6-c0b9-4864-be6c-c5942d4d1e0d",
+                "createdAt": "2020-10-25T14:34:10.665000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 6b11d3d4dbd741a990534b136e6f0e6d)."
+            },
+            {
+                "id": "b9c1d0ee-1476-4dc3-8bd4-f6b3e8d32e5f",
+                "createdAt": "2020-10-25T11:04:16.157000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "700261c9-3286-456b-a4fa-85489c9d6805",
+                "createdAt": "2020-10-25T05:04:04.723000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "31384741-43fb-4b82-afca-cfd1d74dfb80",
+                "createdAt": "2020-10-24T23:03:21.224000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "19978501-1747-4136-8ca8-741c21262a8b",
+                "createdAt": "2020-10-24T17:03:16.380000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "faa88fb8-f593-49a3-95b6-f9e282674e4a",
+                "createdAt": "2020-10-24T11:03:15.692000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "63d61bf0-c230-41d3-90fe-83c4cc5d0cb0",
+                "createdAt": "2020-10-24T05:02:53.542000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "c7834055-9326-4030-babe-c4af51a32268",
+                "createdAt": "2020-10-23T23:02:20.609000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "2c32b806-9ed3-465f-ac24-ef79502c61be",
+                "createdAt": "2020-10-23T23:02:17.301000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "5f30cba6-9fd4-457c-b0d8-c7b35a0a37e5",
+                "createdAt": "2020-10-23T22:59:43.303000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "8572f354-6eeb-4be3-9a75-f907d7a5c7e5",
+                "createdAt": "2020-10-23T22:59:43.302000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "6273ce8e-7fc1-47d8-9c26-fb14dc0213f5",
+                "createdAt": "2020-10-23T22:24:51.607000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "89aa4638-c15a-4959-a44b-716ccc4f979b",
+                "createdAt": "2020-10-23T22:24:32.012000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 4c5c3b0dfac84aac9e2208b6e5b76a4e)."
+            },
+            {
+                "id": "5944a62e-02c1-472d-af0d-4a33e2ba7cd6",
+                "createdAt": "2020-10-23T22:19:23.554000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "e81deecf-5c9e-4f32-b03c-9189168ec65e",
+                "createdAt": "2020-10-23T22:19:23.553000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "e0a05615-2bb0-4ea8-8af8-f0a1800b3725",
+                "createdAt": "2020-10-23T22:14:31.576000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "b25c9060-c1ee-4cc8-9d0f-9195891846c3",
+                "createdAt": "2020-10-23T22:12:26.558000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task b655c696a56f441f8a63a2fad90423c4)."
+            },
+            {
+                "id": "c11ba15b-6377-4caf-9c3d-12fb1338d876",
+                "createdAt": "2020-10-23T21:25:58.618000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "1f4e20c9-1913-4ef2-b186-f6931c507bdf",
+                "createdAt": "2020-10-23T21:25:39.533000+05:30",
+                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 4d18f73f355b4e1cab06899905de57b5)."
+            },
+            {
+                "id": "9a533216-bf4c-48cd-8c62-76446646eca9",
+                "createdAt": "2020-10-23T21:20:37.374000+05:30",
+                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
+            },
+            {
+                "id": "121e3a86-f0e1-47b1-8ac0-b40fa4ba827f",
+                "createdAt": "2020-10-23T21:20:37.373000+05:30",
+                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "938a6434-7396-46db-8ea6-56653f825a3d",
+                "createdAt": "2020-10-23T21:17:17.357000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "0f04c5f0-4844-4ad5-a4fd-016da8384688",
+                "createdAt": "2020-10-23T21:14:57.715000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 4c5c3b0dfac84aac9e2208b6e5b76a4e)."
+            },
+            {
+                "id": "b29e00b8-88b3-4d21-ab88-8ae01a2fab26",
+                "createdAt": "2020-10-23T16:17:22.269000+05:30",
+                "message": "(service f-srv-ui) has reached a steady state."
+            },
+            {
+                "id": "e548da2f-6f70-49e5-9494-9f4cb8a1acbc",
+                "createdAt": "2020-10-23T16:13:49.863000+05:30",
+                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
+            },
+            {
+                "id": "34f7040d-7c01-424a-885a-dc19dd845e3b",
+                "createdAt": "2020-10-23T16:11:47.365000+05:30",
+                "message": "(service f-srv-ui) has started 1 tasks: (task 4d18f73f355b4e1cab06899905de57b5)."
+            },
             {
                 "id": "378401bd-f049-446c-ae3d-ffc9346007ad",
                 "createdAt": "2020-10-23T14:26:11.057000+05:30",
@@ -168,296 +553,6 @@
                 "id": "e42dcdf2-fea5-41f5-b13f-8d7748e85e61",
                 "createdAt": "2020-10-22T16:04:29.264000+05:30",
                 "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "0ee96ff3-6e57-434b-a958-89209bd0d2ed",
-                "createdAt": "2020-10-22T15:59:34.645000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "682850f3-95f1-4ce0-84dd-9757e8e086fe",
-                "createdAt": "2020-10-22T15:57:26.654000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 7f05014a8a0d4c9a9c4387af58784f7a)."
-            },
-            {
-                "id": "41c1ae42-757c-462e-b6d6-e5339e9ce114",
-                "createdAt": "2020-10-22T15:26:27.842000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "e1d7dca9-6435-4d58-8823-ef1bbe4b79b9",
-                "createdAt": "2020-10-22T15:26:08.550000+05:30",
-                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 1a08682b6c96463f90567f4de97ebc24)."
-            },
-            {
-                "id": "4552dc5b-79ac-43c1-b3c9-988325293f8f",
-                "createdAt": "2020-10-22T15:20:57.770000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "6e0b70b1-fc66-4ede-89fa-68e029887385",
-                "createdAt": "2020-10-22T15:20:57.769000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "975862eb-2292-48b2-a06e-4d69fbd0c6a5",
-                "createdAt": "2020-10-22T15:15:57.222000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "dc5d7856-ede4-4c7e-b13b-df72379fb27c",
-                "createdAt": "2020-10-22T15:14:02.518000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 6721e15c85334730a637e13d35b7b4af)."
-            },
-            {
-                "id": "d4c4ce70-0cef-46c2-9483-c9b598524f73",
-                "createdAt": "2020-10-22T12:37:42.247000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "51221d66-198a-4d02-95e5-8762c2c0d7f2",
-                "createdAt": "2020-10-22T12:34:19.645000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "6242d55e-aa0f-41bb-8340-46d8d82f43d2",
-                "createdAt": "2020-10-22T12:33:09.920000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "899f63ef-d340-4d9c-8700-9aba8ef3d2c8",
-                "createdAt": "2020-10-22T12:32:57.567000+05:30",
-                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 78d140b1eaab4ced8dc5127523e3de35)."
-            },
-            {
-                "id": "8c4b11d8-2d0f-4786-9ccf-41020ceb3bae",
-                "createdAt": "2020-10-22T12:32:00.042000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 1a08682b6c96463f90567f4de97ebc24)."
-            },
-            {
-                "id": "d1356a6d-b489-4bda-a8c4-f7d171a82f69",
-                "createdAt": "2020-10-22T12:31:47.878000+05:30",
-                "message": "(service f-srv-ui) stopped 1 pending tasks."
-            },
-            {
-                "id": "72f2f3f5-40c4-4f51-8abb-677c3fd1547d",
-                "createdAt": "2020-10-22T12:30:19.268000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 1c5d38c404594597a68f93f285da3491)."
-            },
-            {
-                "id": "07dd6ff2-a27c-4d84-af52-f7512719fb15",
-                "createdAt": "2020-10-22T12:29:44.532000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "e2cb8b96-0f0e-4e91-9301-3afeb7fd1b2c",
-                "createdAt": "2020-10-22T12:27:53.599000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 78d140b1eaab4ced8dc5127523e3de35)."
-            },
-            {
-                "id": "bc7899ce-a343-45c2-9862-804ac1cd8b58",
-                "createdAt": "2020-10-22T12:27:43.900000+05:30",
-                "message": "(service f-srv-ui) has stopped 1 running tasks: (task c597014574f64a7289ba0c6ab732ad14)."
-            },
-            {
-                "id": "e682767a-c57c-40e1-9052-c4d0400c5bf7",
-                "createdAt": "2020-10-22T12:27:43.869000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "fdcdc614-8d33-4b99-8e05-8b68bd77de26",
-                "createdAt": "2020-10-22T12:27:43.833000+05:30",
-                "message": "(service f-srv-ui) (port 4200) is unhealthy in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394) due to (reason Health checks failed with these codes: [404])."
-            },
-            {
-                "id": "e886e7cb-be83-48a7-b1ec-3dc4a20fab23",
-                "createdAt": "2020-10-22T12:15:47.347000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "a8601ea2-5160-4775-a09f-27e37fdfbfdf",
-                "createdAt": "2020-10-22T12:15:47.337000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "004be2e2-5b15-4c3d-a1cb-c3e3fe3317de",
-                "createdAt": "2020-10-22T12:11:01.159000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "f5505dbc-68da-4a7b-8932-6dbb2293fbd6",
-                "createdAt": "2020-10-22T12:08:57.683000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task c597014574f64a7289ba0c6ab732ad14)."
-            },
-            {
-                "id": "e39846e4-849c-43fe-a630-1fa1ec5d2865",
-                "createdAt": "2020-10-22T11:13:27.527000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "60bd6386-916f-4017-ac29-fee911d20522",
-                "createdAt": "2020-10-22T11:11:19.739000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "5d1de4c6-e7f2-45bc-a49c-b002ac70fcaa",
-                "createdAt": "2020-10-22T11:11:19.733000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "35bad594-a555-4688-88bc-f653e17402ca",
-                "createdAt": "2020-10-22T11:08:26.868000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "9f0e7d94-4ee8-49c4-83a8-4160f472c2de",
-                "createdAt": "2020-10-22T11:06:25.728000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 51d748f2e9cf430bb9636707a1b05cc9)."
-            },
-            {
-                "id": "5b7b626b-370e-49b0-83ee-0b0c1d26e9cb",
-                "createdAt": "2020-10-22T09:33:35.876000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "f4d38a3e-03da-42dd-a985-743bbf1a70dc",
-                "createdAt": "2020-10-22T09:30:00.666000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "ff6cdb7a-7b67-42aa-8b32-13189d7387ee",
-                "createdAt": "2020-10-22T09:27:51.661000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task b24503caf4e34171826ef1228b621724)."
-            },
-            {
-                "id": "d7237050-9d29-49e3-98d0-51a48f8b9330",
-                "createdAt": "2020-10-22T04:56:01.333000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "d8dc18c7-1920-41cd-a7f3-ffc66efee3a5",
-                "createdAt": "2020-10-21T22:55:44.866000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "ca514e4b-2f66-4e06-bcbb-4c6c4f4e9257",
-                "createdAt": "2020-10-21T22:55:26.761000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "e422aceb-e3db-4176-b4c8-7488d11c857e",
-                "createdAt": "2020-10-21T22:55:26.752000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "2a936fe4-1be2-4ea4-abdf-a5e55e187f71",
-                "createdAt": "2020-10-21T22:19:27.792000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "454ba6c3-3537-4ea1-8160-9661177328c8",
-                "createdAt": "2020-10-21T22:19:05.472000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "278d2502-aada-49ff-948b-7818888fe930",
-                "createdAt": "2020-10-21T22:14:03.116000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "d12e0c39-1c2d-430e-b23c-fac63727efca",
-                "createdAt": "2020-10-21T22:14:03.115000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "c5ce385d-0cba-4831-bbf0-b58ffccd4b3b",
-                "createdAt": "2020-10-21T17:49:21.891000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "abd6cd4a-5e45-42ba-895d-46b387bc3830",
-                "createdAt": "2020-10-21T17:45:43.157000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "7f7d6e1f-1ece-4efe-a9a9-4516b3db5b11",
-                "createdAt": "2020-10-21T17:43:38.788000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task d8bf89f6-e57a-4ea2-8344-71b4d2a43c7f)."
-            },
-            {
-                "id": "a833b6ca-a0ee-4cca-b9da-70af112c8020",
-                "createdAt": "2020-10-21T17:32:23.079000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "9557a320-3202-4722-bb06-22e4f6766480",
-                "createdAt": "2020-10-21T11:31:40.352000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "61bd8f25-f955-4aa4-8644-ec6c2c9f7d85",
-                "createdAt": "2020-10-21T05:31:35.524000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "9a898c85-d55c-4ac6-a53e-ad99787104c7",
-                "createdAt": "2020-10-20T23:31:28.002000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "8138245c-1228-4a94-a5bb-c805103f2cc8",
-                "createdAt": "2020-10-20T17:30:56.924000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "0974dad1-51b3-47e1-80a6-f0b6d9a1ccde",
-                "createdAt": "2020-10-20T17:30:50.201000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "be5b1c39-d2ed-4c45-86d7-10c2c1504818",
-                "createdAt": "2020-10-20T17:30:45.530000+05:30",
-                "message": "(service f-srv-ui) has begun draining connections on 1 tasks."
-            },
-            {
-                "id": "5be3a8be-d2e2-4934-8f64-a0163bb67cde",
-                "createdAt": "2020-10-20T17:30:45.529000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "9e4e0abb-f6af-43d9-9e0c-17664fa2ed6c",
-                "createdAt": "2020-10-20T14:37:16.787000+05:30",
-                "message": "(service f-srv-ui) has reached a steady state."
-            },
-            {
-                "id": "88ef4c0d-0f19-4b14-b8ee-f20e8c3d9f03",
-                "createdAt": "2020-10-20T14:32:20.674000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "986f7cb1-8580-49e8-a540-b377611f95c0",
-                "createdAt": "2020-10-20T14:30:36.926000+05:30",
-                "message": "(service f-srv-ui) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "f6a06d12-d719-4e11-ba5f-4067dd901e28",
-                "createdAt": "2020-10-20T14:30:26.002000+05:30",
-                "message": "(service f-srv-ui) has stopped 1 running tasks: (task 62a642ce-22bf-47fc-a68c-c297c556a9cc)."
-            },
-            {
-                "id": "dfb72753-760a-4824-8138-1ea54698e51d",
-                "createdAt": "2020-10-20T14:30:14.811000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 0f2a3927-7ac2-403f-810d-05f5227f1393)."
-            },
-            {
-                "id": "e8fe5f4a-e546-422f-ac70-1175480a7e6d",
-                "createdAt": "2020-10-20T14:27:02.429000+05:30",
-                "message": "(service f-srv-ui) registered 1 targets in (target-group arn:aws:elasticloadbalancing:us-east-1:356567610291:targetgroup/target-grp-ecs-ui/ec3e708332501394)"
-            },
-            {
-                "id": "d2dce443-7ed5-4956-a440-c2fc3fe3b156",
-                "createdAt": "2020-10-20T14:24:55.210000+05:30",
-                "message": "(service f-srv-ui) has started 1 tasks: (task 62a642ce-22bf-47fc-a68c-c297c556a9cc)."
             }
         ],
         "createdAt": "2020-10-20T14:24:47.237000+05:30",

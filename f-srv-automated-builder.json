@@ -10,26 +10,26 @@
             }
         ],
         "status": "ACTIVE",
-        "desiredCount": 1,
+        "desiredCount": 0,
         "runningCount": 0,
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:4",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:7",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/0884060980597898363",
+                "id": "ecs-svc/5124320177570835966",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:4",
-                "desiredCount": 1,
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-automated-builder-api:7",
+                "desiredCount": 0,
                 "pendingCount": 0,
                 "runningCount": 0,
-                "createdAt": "2020-10-23T13:51:31.610000+05:30",
-                "updatedAt": "2020-10-23T13:51:56.812000+05:30",
+                "createdAt": "2020-10-26T12:02:19.717000+05:30",
+                "updatedAt": "2020-10-26T18:39:43.197000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -49,299 +49,504 @@
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "8f7dc27d-df8f-467b-b9c3-8500b18a9947",
-                "createdAt": "2020-10-23T14:24:44.886000+05:30",
+                "id": "96e3c714-cd81-4b11-a572-7f494d5fb323",
+                "createdAt": "2020-10-27T18:30:06.367000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "c9e3c8bd-76e8-4cc8-9d02-7caa3b491fe5",
-                "createdAt": "2020-10-23T08:24:25.900000+05:30",
+                "id": "4060f015-6115-4e9c-b828-db7dc7f440ad",
+                "createdAt": "2020-10-27T12:29:54.631000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "e5246cd9-ba49-420a-8027-7da93d58db37",
-                "createdAt": "2020-10-23T02:24:21.902000+05:30",
+                "id": "df145fc7-4e62-4894-b446-87dc98b613ab",
+                "createdAt": "2020-10-27T06:29:32.141000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "a8172bdb-00ea-47cf-b763-f513f9253634",
-                "createdAt": "2020-10-22T20:24:19.198000+05:30",
+                "id": "b70ebd1b-7067-4ef6-ab93-781ce7890d38",
+                "createdAt": "2020-10-27T00:29:17.871000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "49443148-f891-4840-a1d3-fe521afc81d3",
-                "createdAt": "2020-10-22T20:24:08.907000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 8e277e8484804a5b918015e0a2ba8231)."
-            },
-            {
-                "id": "ccb9af3c-b1a2-44ba-b9a8-d771d8ed4887",
-                "createdAt": "2020-10-22T15:29:48.854000+05:30",
+                "id": "2932ca1f-492e-490f-aa39-bd36000ad07e",
+                "createdAt": "2020-10-26T18:29:09.493000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "c8264640-64a0-4d56-82de-02f192ddf56c",
-                "createdAt": "2020-10-22T09:29:19.155000+05:30",
+                "id": "a032989b-5ced-47b7-b10a-6a5418c9adf4",
+                "createdAt": "2020-10-26T18:28:58.366000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 1fcdb8b81e994f84891a050b3c3f5c81)."
+            },
+            {
+                "id": "cffbd8f6-9762-4b05-aa0a-6de567246899",
+                "createdAt": "2020-10-26T15:01:26.464000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "ddf162e6-ca03-4de6-8fb8-f5dae89a60a0",
-                "createdAt": "2020-10-22T09:27:58.350000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8e277e8484804a5b918015e0a2ba8231)."
+                "id": "abd22b82-16ce-4eeb-97af-873e2be96cf1",
+                "createdAt": "2020-10-26T14:59:27.541000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 1fcdb8b81e994f84891a050b3c3f5c81)."
             },
             {
-                "id": "f6401f5e-a5a2-4eca-9e7e-b8e84531504a",
-                "createdAt": "2020-10-22T04:14:44.723000+05:30",
+                "id": "a498a7e3-454b-4ea8-a3c8-498551df68da",
+                "createdAt": "2020-10-26T14:09:13.352000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "2ae5e302-759d-4d19-a395-5a648d8f2bba",
-                "createdAt": "2020-10-21T22:14:19.291000+05:30",
+                "id": "e631a833-7c0b-4872-a339-00b75b25b46b",
+                "createdAt": "2020-10-26T14:07:10.619000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 40275efea4e64c8290dfc07bc2e6a2a7)."
+            },
+            {
+                "id": "a879dd81-ebcd-4b0b-b0c5-7c15500da128",
+                "createdAt": "2020-10-26T14:06:30.072000+05:30",
+                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 71d049ba4b1d4808acb5c37240778a53)."
+            },
+            {
+                "id": "4ed474b3-0f1f-4b66-8316-dede8f31f1d7",
+                "createdAt": "2020-10-26T14:06:30.040000+05:30",
+                "message": "(service f-srv-automated-builder) stopped 1 pending tasks."
+            },
+            {
+                "id": "42fc2043-2de4-448a-8fdc-516c529689df",
+                "createdAt": "2020-10-26T14:06:06.946000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a3959883e6ad4be78cb9cd63ce1a2724)."
+            },
+            {
+                "id": "0dbb49eb-192a-4b58-8ec9-27867e2962e5",
+                "createdAt": "2020-10-26T14:04:04.291000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 615ba1820bc94920b8bfff146eced328)."
+            },
+            {
+                "id": "4662ee8a-a6f7-4a01-9a42-eddab78de8eb",
+                "createdAt": "2020-10-26T14:02:06.668000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 38083e6381e84ed3b324d8dee9bdcc48)."
+            },
+            {
+                "id": "b6356d60-dfa1-4eb8-91a8-cbab883ecf49",
+                "createdAt": "2020-10-26T13:59:56.243000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task d739319db30f4e54a23f9d80a00d2f02)."
+            },
+            {
+                "id": "a67f82f1-dfda-4fb9-ae08-94d3125a6c93",
+                "createdAt": "2020-10-26T13:57:52.957000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task f03debd329ac4d63ad3b85bd5f8796ef)."
+            },
+            {
+                "id": "78aa9cbb-0b62-4b98-9935-d1ada498f8d9",
+                "createdAt": "2020-10-26T13:55:34.936000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b13d308eac8047e5994f04308e174460)."
+            },
+            {
+                "id": "ad435e86-7b06-4928-980b-9f82e8eb7ea0",
+                "createdAt": "2020-10-26T13:53:31.209000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 4db606e57aab48ce88823740385ea176)."
+            },
+            {
+                "id": "785b5fad-5bd5-43eb-ad97-efa30501cc6e",
+                "createdAt": "2020-10-26T13:51:30.746000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 14d5833785234c7ea9a111169eff516b)."
+            },
+            {
+                "id": "5870e03a-27c0-4b0f-af8b-41562329df0f",
+                "createdAt": "2020-10-26T13:49:29.336000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task faac84d8ba5c42d28dbde0426dc11652)."
+            },
+            {
+                "id": "5c657fa7-f974-48f8-a975-8207b32e3bcc",
+                "createdAt": "2020-10-26T13:47:31.580000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 0ea812a92df94350b83ae586334a0a86)."
+            },
+            {
+                "id": "2e5290c7-1a05-4924-a969-660999fd578f",
+                "createdAt": "2020-10-26T13:45:30.169000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 20ce052117cb4eae93aeaa6cd223e78c)."
+            },
+            {
+                "id": "9f70aafe-ea38-4d69-a205-b6af2a44607e",
+                "createdAt": "2020-10-26T13:43:28.847000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 0de98d29fb7e404b8210d58ae88cb94f)."
+            },
+            {
+                "id": "6676076c-a5b2-4fa1-8905-92f9fdbeed28",
+                "createdAt": "2020-10-26T13:41:30.748000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 119320b76f01491c9e445274f6afcaae)."
+            },
+            {
+                "id": "67c7498c-c42e-44f5-91df-3489cf01ada4",
+                "createdAt": "2020-10-26T13:39:32.571000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task cadd393925ce47dc9ff3c22172cf5cb2)."
+            },
+            {
+                "id": "9a23032e-5416-458c-936a-0c6e5c3916f6",
+                "createdAt": "2020-10-26T13:37:29.536000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8a4bdccae03a4f34b09a48e0aec2e8bd)."
+            },
+            {
+                "id": "e1ba3e31-b54c-472c-a4a8-d125a8d58daf",
+                "createdAt": "2020-10-26T13:35:23.428000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 2ba7faa0f22c43ba9dd9c9a23d36514c)."
+            },
+            {
+                "id": "905de495-b339-4f39-b060-d3539c755be7",
+                "createdAt": "2020-10-26T13:33:02.936000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task ee246c44080a456ab16b3b6740a1d574)."
+            },
+            {
+                "id": "06b0b391-514f-4544-9484-3ffed9dccea1",
+                "createdAt": "2020-10-26T13:30:52.226000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task f29706f5639c4b8997d4e70f650e3ca2)."
+            },
+            {
+                "id": "7c5ad3fa-b76e-42af-9c67-d5417eab40a9",
+                "createdAt": "2020-10-26T13:28:52.782000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task e5028918d94046d3ad3090837ab9b74d)."
+            },
+            {
+                "id": "6d922fde-ffb0-4622-aa74-6d42aaa6ef14",
+                "createdAt": "2020-10-26T13:26:55.222000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 60f858944b2f41e186d12e20a4448390)."
+            },
+            {
+                "id": "813f9382-83d4-4b3a-a9cc-4384369c5641",
+                "createdAt": "2020-10-26T13:25:04.272000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task fe938ce9d95c488ea15bca04a043fe67)."
+            },
+            {
+                "id": "5b72bb37-a3b4-41d8-b2d2-3ed445f98b80",
+                "createdAt": "2020-10-26T13:23:14.032000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 6944b047bb584cdfbed4599f30d0b9f5)."
+            },
+            {
+                "id": "47a053a6-54bc-474e-934b-7805a5332662",
+                "createdAt": "2020-10-26T13:21:14.283000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task ca0faff573d647e4859e7a26d99b7d85)."
+            },
+            {
+                "id": "bbf9edcf-f0a4-462c-9215-8bfc2af73bb9",
+                "createdAt": "2020-10-26T13:19:14.820000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task bc90d6cc7a954fec8729a81b68357617)."
+            },
+            {
+                "id": "82c40b03-c9f3-4376-9995-268f44ba42ff",
+                "createdAt": "2020-10-26T13:17:13.339000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 85eaad15e0064b269c5b9003bda4a1b8)."
+            },
+            {
+                "id": "332f0166-667d-4199-9ac6-4350515dd9e3",
+                "createdAt": "2020-10-26T13:15:17.038000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 38535f5a41504b88842d4fc966295b67)."
+            },
+            {
+                "id": "41f501c4-5d7a-4651-a1c6-d00c4ae5c887",
+                "createdAt": "2020-10-26T13:13:09.862000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 3c1b499f975341d8822456e498b4d7dc)."
+            },
+            {
+                "id": "510807d3-8f41-4a71-a580-00cb85abc030",
+                "createdAt": "2020-10-26T13:11:08.299000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 070496f0fbb548cf90baedc03f95a992)."
+            },
+            {
+                "id": "6163cb99-85c3-412d-b1a9-34d15d0a25d2",
+                "createdAt": "2020-10-26T13:09:05.345000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 467ba319ec8942878a47bc1f0b0bc217)."
+            },
+            {
+                "id": "716dd86f-6ed0-45d2-8e18-3aead1388526",
+                "createdAt": "2020-10-26T13:07:07.433000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 6b663af8edd740a6b7b06027f5f8ecb2)."
+            },
+            {
+                "id": "954f4466-dfca-40a7-a6b9-e06df49f6e7a",
+                "createdAt": "2020-10-26T13:04:55.846000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task fc4d670ad1694206add6dcf2b7e2e894)."
+            },
+            {
+                "id": "d509de07-0a98-460a-b5d7-79d1fc93d318",
+                "createdAt": "2020-10-26T13:02:56.721000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 59b0c205c90947299571043724e519ed)."
+            },
+            {
+                "id": "79c239d0-cdf5-41a6-8141-0ab9a52f1347",
+                "createdAt": "2020-10-26T13:00:58.568000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b0b182476f6948f8ab5499f6f666ca96)."
+            },
+            {
+                "id": "540724f2-c66d-4655-8740-3eae182c27d0",
+                "createdAt": "2020-10-26T12:58:57.242000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 2f9e5d05f42846f790310b8a4404042d)."
+            },
+            {
+                "id": "d90353a2-889d-4eca-af11-69d58749c43c",
+                "createdAt": "2020-10-26T12:56:59.562000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 19ac503a01f6449282e916c32eb02460)."
+            },
+            {
+                "id": "c28692c7-9fa4-4bde-a5fd-9d8f364797ea",
+                "createdAt": "2020-10-26T12:55:02.710000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 48e4700c17244c6c8b208202a22a72da)."
+            },
+            {
+                "id": "b9a471d3-02a8-45c2-8160-c10833d70088",
+                "createdAt": "2020-10-26T12:52:57.633000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a71907ab9520460195a387ee51c1d804)."
+            },
+            {
+                "id": "b0409774-3257-43d7-afa4-ff27e7cd2645",
+                "createdAt": "2020-10-26T12:50:50.080000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b400156130d44389a9d46a8e3ccc437b)."
+            },
+            {
+                "id": "b7f9579c-dfa4-47f1-8a7f-7d687c0587ed",
+                "createdAt": "2020-10-26T12:48:38.820000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 3577e6c0be0a4b23815c432320f56ed5)."
+            },
+            {
+                "id": "c27c4680-a8cc-4265-bfcf-c12b2a39a306",
+                "createdAt": "2020-10-26T12:46:34.770000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b9ed21be927a4bf0be5578fbe85f0c10)."
+            },
+            {
+                "id": "39b34e0f-dc1a-4c53-9d67-5efbab869221",
+                "createdAt": "2020-10-26T12:44:37.752000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task c23d7c5cb7db4765b51d795745f3d949)."
+            },
+            {
+                "id": "33b02d8e-acce-4f2d-8e62-c83d2de35940",
+                "createdAt": "2020-10-26T12:42:44.498000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 02472488f92c445488a39ddbba3fae3c)."
+            },
+            {
+                "id": "7e9adfca-fab1-4038-9a30-91ba9afc52bf",
+                "createdAt": "2020-10-26T12:40:44.986000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 87f24fefb0364736a267cf27bda95ced)."
+            },
+            {
+                "id": "657f2454-ef69-424d-9fbd-43a7e99233b4",
+                "createdAt": "2020-10-26T12:38:49.999000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task ef181652a69045de8051cd34ea496341)."
+            },
+            {
+                "id": "2c0bcb51-b681-48eb-b49d-7d37364a0cd8",
+                "createdAt": "2020-10-26T12:36:44.222000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8ac3482e6df74798b525ab970becb5ce)."
+            },
+            {
+                "id": "a8533a86-df5b-4c77-9bb1-af2fc93290a2",
+                "createdAt": "2020-10-26T12:34:44.924000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 0eb5f43953ff45398fb585c057f17b9a)."
+            },
+            {
+                "id": "20e1f6a0-6ea9-42a4-8e2b-ed61b7a83cea",
+                "createdAt": "2020-10-26T12:32:45.441000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task e07542eaad3447248a9ba3a626e754bc)."
+            },
+            {
+                "id": "45a4639e-97ad-4c24-a5d4-c365f6eaf144",
+                "createdAt": "2020-10-26T12:30:36.758000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 08c762c8c43c4b7e9bc6ee18ba9eb7ae)."
+            },
+            {
+                "id": "20a4ddd6-b500-4809-870e-8eca03ab7dc9",
+                "createdAt": "2020-10-26T12:28:42.933000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 55b3f52ffb18437aace2c1eca3be5ec0)."
+            },
+            {
+                "id": "c52faf32-2ce0-456c-ae08-299368a56f5f",
+                "createdAt": "2020-10-26T12:26:43.485000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 733a57155bfc4551a463a8cc29bb7437)."
+            },
+            {
+                "id": "a599d684-a0f2-4075-bd35-c1e7d3591696",
+                "createdAt": "2020-10-26T12:24:41.395000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 616417dd22fb468ba16ea19ca9cf943a)."
+            },
+            {
+                "id": "fee725ea-fa42-427c-a41d-d68aa95e130a",
+                "createdAt": "2020-10-26T12:22:42.997000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 30643a0c342d45bfbcbb12b5b95792ab)."
+            },
+            {
+                "id": "2468f540-9406-4e04-b194-3f495ef44dcc",
+                "createdAt": "2020-10-26T12:20:50.991000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 00fab6cb1d7f4f5b921db544816c16ea)."
+            },
+            {
+                "id": "f284d5b9-d7c0-468a-8808-ab4d0374f501",
+                "createdAt": "2020-10-26T12:18:47.038000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task f0082eacd1a2408a8f3b0f0471d66125)."
+            },
+            {
+                "id": "82cc1418-7911-4119-ae84-dae24afa612c",
+                "createdAt": "2020-10-26T12:16:42.136000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 3bc8eb0ffb504ce9a2380d23112fb365)."
+            },
+            {
+                "id": "6d8e64b3-f92d-41e0-87fe-5e9c95f0216d",
+                "createdAt": "2020-10-26T12:14:48.729000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 2842c4a373d64f6387473e8008f20c1f)."
+            },
+            {
+                "id": "43437604-6911-4359-bedd-76de749f4925",
+                "createdAt": "2020-10-26T12:12:48.312000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task d14d73d4edd64739a1b4f2b5d78aa226)."
+            },
+            {
+                "id": "18704e59-8471-428b-b11e-ebd19e676795",
+                "createdAt": "2020-10-26T12:10:31.449000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task be1dd26be2b54b5481569219ef4bbf7c)."
+            },
+            {
+                "id": "6e3045c6-e475-47cc-a0e9-daa22ddea46e",
+                "createdAt": "2020-10-26T12:08:22.032000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task c7df416ab9d24e3dbf6d144294fd1575)."
+            },
+            {
+                "id": "c6230395-9f55-4858-b021-5b3a0b918960",
+                "createdAt": "2020-10-26T12:06:17.166000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 2bc924a1aab04e6e94b8b21b18fa553e)."
+            },
+            {
+                "id": "3dc5bb07-bd73-4e9a-8343-012d252e6125",
+                "createdAt": "2020-10-26T12:04:16.526000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task e7ddd4191e694fcfaa87d1d345792fa0)."
+            },
+            {
+                "id": "4814ba68-f789-4289-bf79-33a57cd6e585",
+                "createdAt": "2020-10-26T12:02:24.069000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 90a2a2224443472aaa6f9bd5965306e2)."
+            },
+            {
+                "id": "81ce7291-30c7-4e06-b782-37f7fc1f8e30",
+                "createdAt": "2020-10-26T11:42:40.623000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "74a6fda5-227e-4e74-aad4-0ce228330fab",
-                "createdAt": "2020-10-21T22:14:08.277000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 97ee9e86-782f-4a31-b927-0b70697c2a96)."
+                "id": "bad8ebe7-edba-47e9-b236-fc3c55f83374",
+                "createdAt": "2020-10-26T11:40:37.101000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 71d049ba4b1d4808acb5c37240778a53)."
             },
             {
-                "id": "baa545f5-6a07-4d2c-a968-b52b4ae1bae4",
-                "createdAt": "2020-10-21T17:48:01.454000+05:30",
+                "id": "f94e4ed3-efae-4138-b108-cb55f6454f90",
+                "createdAt": "2020-10-26T11:40:36.834000+05:30",
+                "message": "(service f-srv-automated-builder) stopped 1 pending tasks."
+            },
+            {
+                "id": "c3bd25fe-708b-49da-ba1d-9b55ca9a30e9",
+                "createdAt": "2020-10-26T11:40:17.563000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 1286d64093844748a1562112ba5d9bed)."
+            },
+            {
+                "id": "2ef144c0-646a-44db-870e-28a2ff7d3b9f",
+                "createdAt": "2020-10-26T11:38:19.953000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 9f36cbfab94c40ab806351b5770b5060)."
+            },
+            {
+                "id": "216e8989-5e82-4fb5-90f5-ca97f9764780",
+                "createdAt": "2020-10-26T11:36:18.563000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a745d46e262c42808751229213260530)."
+            },
+            {
+                "id": "4d00951e-bd87-4e66-b597-0ce71f7ecd96",
+                "createdAt": "2020-10-26T11:34:21.411000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 7ccab90881764faa948975e27f550813)."
+            },
+            {
+                "id": "baa4cb7c-2e3e-4af3-b5db-0b0f32ae6a4b",
+                "createdAt": "2020-10-26T11:32:21.730000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b00a61d3a9094ed3bd7e04ae611039bd)."
+            },
+            {
+                "id": "64e79e35-1921-49c2-a4e4-df136c6f6628",
+                "createdAt": "2020-10-26T11:30:24.514000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 7ff63ed5e5054932baf659027a1ff3d6)."
+            },
+            {
+                "id": "b0d3a627-5805-47fe-847f-1936e2dd06a4",
+                "createdAt": "2020-10-26T11:28:27.434000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 526841ba7f04403bba2ad0312dc8666b)."
+            },
+            {
+                "id": "be85c635-ee72-4a1b-8ff2-642011e08b01",
+                "createdAt": "2020-10-26T11:26:27.414000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 852ad295237b49d8953fada829ddf8fa)."
+            },
+            {
+                "id": "a6b06ee8-1bf1-48b0-b7d1-02d601d4c467",
+                "createdAt": "2020-10-26T11:24:32.102000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 6455150cc0a941ac8bcb3db8b5952bcd)."
+            },
+            {
+                "id": "b708fc8f-9b57-468d-bf16-9f9c62e33e43",
+                "createdAt": "2020-10-26T11:22:36.790000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 60022a2ef20040b0b5e3381ef78ae8d5)."
+            },
+            {
+                "id": "60f7ac90-f7be-4e32-8591-3da1a10daa94",
+                "createdAt": "2020-10-26T11:20:36.248000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task c5860e28ad27415596c59cb6990cd96e)."
+            },
+            {
+                "id": "eb25014e-2034-4d07-b4ab-0fe29bbb68b5",
+                "createdAt": "2020-10-26T11:20:03.657000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "872971bb-e466-40f4-94de-4f44de7fb8b4",
-                "createdAt": "2020-10-21T17:46:04.073000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 97ee9e86-782f-4a31-b927-0b70697c2a96)."
+                "id": "fa624f38-d6e8-4fde-ac2b-b666ea203c04",
+                "createdAt": "2020-10-26T11:18:42.414000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task b9016170e7614b85a6c9fddb2edd7518)."
             },
             {
-                "id": "4e8e0f23-586f-4a20-99f8-493c13c74dcb",
-                "createdAt": "2020-10-21T17:45:29.799000+05:30",
+                "id": "9fbdfa74-2697-44c1-8570-ef3d962749f7",
+                "createdAt": "2020-10-26T11:18:07.079000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "4bfad76e-b833-43fa-9a70-455b67fe714e",
-                "createdAt": "2020-10-21T17:43:25.084000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 34bcb901-2953-4fbd-92c2-26ef4e2cc0b2)."
+                "id": "b6f73dd3-3873-403d-a00c-00bcc1ca21f6",
+                "createdAt": "2020-10-26T11:16:40.959000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 1d30648b2cc54fdab5b54e5306b40d98)."
             },
             {
-                "id": "4797ffb3-aab6-47bf-9d02-45f93360221d",
-                "createdAt": "2020-10-21T17:31:43.862000+05:30",
+                "id": "316f2390-7a28-4d29-a38b-6d57a39a87c3",
+                "createdAt": "2020-10-26T11:14:42.540000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task f3116688555f44cd8e78f8b1ee5f3ff7)."
+            },
+            {
+                "id": "625ef58c-13f2-41b1-a956-f414c69ebf2d",
+                "createdAt": "2020-10-26T11:12:41.775000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task c58c90594dbb444495e8fed17b7d38c8)."
+            },
+            {
+                "id": "f3681fb7-d06c-498e-8922-65bdbbd5ba3d",
+                "createdAt": "2020-10-26T11:10:38.568000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a8d1c9a16ee240e395347f13c2586d35)."
+            },
+            {
+                "id": "24e39581-1abb-4366-9b87-5a1c4f8f62d4",
+                "createdAt": "2020-10-26T11:10:06.656000+05:30",
                 "message": "(service f-srv-automated-builder) has reached a steady state."
             },
             {
-                "id": "bc336fd9-c9f4-454d-8949-8653923a6180",
-                "createdAt": "2020-10-21T11:31:36.684000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
+                "id": "0f2e0e90-87e5-4f01-86c8-aa6b783210d2",
+                "createdAt": "2020-10-26T11:08:38.698000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 01d58711490f49babdcf80666b0e5fd4)."
             },
             {
-                "id": "84aab692-7376-46fb-b2e0-6f480bfe3e4e",
-                "createdAt": "2020-10-21T05:31:16.754000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
+                "id": "daae7ebc-31f2-4703-a302-92352a927743",
+                "createdAt": "2020-10-26T11:06:38.147000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task afa8a7502aa048f4b639524452063f8e)."
             },
             {
-                "id": "9ff1168d-0740-409a-b803-4f5ead98c869",
-                "createdAt": "2020-10-20T23:31:00.710000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
+                "id": "94450931-3850-4e4e-b0ad-1ea317f64ccb",
+                "createdAt": "2020-10-26T11:04:20.656000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 9b1750e85cfc48e994b1c062c11747cc)."
             },
             {
-                "id": "d83f55dd-256f-4945-9fc9-dfd084a3b2f0",
-                "createdAt": "2020-10-20T17:30:41.641000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "d180d5df-a974-4064-ba0e-71b7b15d42cc",
-                "createdAt": "2020-10-20T17:30:31.633000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 47108e4d-2540-4b1e-af60-06228eeecad2)."
-            },
-            {
-                "id": "642ea2e3-d20d-41d8-974f-75a32ee72c57",
-                "createdAt": "2020-10-20T14:06:22.547000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "551c61e5-f12c-43da-950e-645f9e291770",
-                "createdAt": "2020-10-20T14:04:26.126000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 47108e4d-2540-4b1e-af60-06228eeecad2)."
-            },
-            {
-                "id": "a9dca581-ee4d-4622-83cb-18907f0553d8",
-                "createdAt": "2020-10-20T11:26:14.177000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "0cdc5d41-8ff3-476d-b4c7-dc0eeeaf0078",
-                "createdAt": "2020-10-20T05:26:10.670000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "718eeceb-3703-47d7-91d7-4795a1c71b75",
-                "createdAt": "2020-10-19T23:25:51.671000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "f27c82dc-af37-4ddd-a89a-fe96c2872e09",
-                "createdAt": "2020-10-19T17:25:31.327000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "c2d87e96-a391-4ab0-85be-a95b527c48b4",
-                "createdAt": "2020-10-19T17:25:23.752000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task fae8c874-af87-4407-9f1f-ffeb7075b46f)."
-            },
-            {
-                "id": "7d2376a5-647e-4b41-a8e0-955892334efc",
-                "createdAt": "2020-10-19T15:36:36.657000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "f06db62e-d665-4bce-a6d3-0511a0f61efd",
-                "createdAt": "2020-10-19T15:34:34.744000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task fae8c874-af87-4407-9f1f-ffeb7075b46f)."
-            },
-            {
-                "id": "d83fb8ba-242c-43b4-8ad0-7046e50f7324",
-                "createdAt": "2020-10-19T09:44:25.658000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "2909f72a-3b4a-49b5-a3bc-8ccf572c9eca",
-                "createdAt": "2020-10-19T03:44:16.199000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "d12d532d-a1b2-461a-864f-5cc6ea423273",
-                "createdAt": "2020-10-18T21:43:50.321000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "3dd69ac8-e172-444d-9bb2-e692aae0fc9c",
-                "createdAt": "2020-10-18T15:43:36.905000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "9a2e6de7-0425-4cbe-af2c-ac7e0cfe2a95",
-                "createdAt": "2020-10-18T15:43:24.723000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task cff61776-14e7-4c52-960e-9e5ef1d43816)."
-            },
-            {
-                "id": "d13932b3-6005-4d55-af63-d048b4435b47",
-                "createdAt": "2020-10-18T15:32:49.355000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "a0702481-8e80-40ce-b4d5-0650abbcebdf",
-                "createdAt": "2020-10-18T15:30:41.169000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task cff61776-14e7-4c52-960e-9e5ef1d43816)."
-            },
-            {
-                "id": "547643c6-c4f5-42b4-8c8f-1788231d6347",
-                "createdAt": "2020-10-18T14:28:11.009000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "c3a9757f-9844-4b81-b236-4274ee7e9f12",
-                "createdAt": "2020-10-18T14:28:01.617000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 3b8c0556-c938-47c8-99f0-c73db1acaf1f)."
-            },
-            {
-                "id": "a3c8313d-5b00-4273-a97a-2742bf003c92",
-                "createdAt": "2020-10-18T13:56:43.523000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "8a19faf2-63ac-4295-8457-41dcffac3748",
-                "createdAt": "2020-10-18T13:54:43.991000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 3b8c0556-c938-47c8-99f0-c73db1acaf1f)."
-            },
-            {
-                "id": "e0d35dd3-31d0-4801-b3a8-5348a42381ae",
-                "createdAt": "2020-10-18T11:41:27.001000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "e92cb8f7-a06c-4604-947b-a31c1c11996f",
-                "createdAt": "2020-10-18T05:41:16.851000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "5a58f4a7-66d2-4b79-a10d-af5a28928851",
-                "createdAt": "2020-10-17T23:40:55.946000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "9d5c7da7-240c-4a14-b0de-80dc317c58bf",
-                "createdAt": "2020-10-17T23:40:46.955000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 8561cfef-0d67-4481-b56f-66425b1c1868)."
-            },
-            {
-                "id": "2175e6de-104b-4b2f-abbb-f18c2f4b819d",
-                "createdAt": "2020-10-17T19:14:48.433000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "25c3c6bd-f2b4-4c45-869b-78d51c8881ef",
-                "createdAt": "2020-10-17T19:14:07.762000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task a76ae27d-ed10-4743-800b-891205882ddc)."
-            },
-            {
-                "id": "901b1dff-981d-406b-bd18-d4b2eb58afe2",
-                "createdAt": "2020-10-17T19:11:21.690000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 8561cfef-0d67-4481-b56f-66425b1c1868)."
-            },
-            {
-                "id": "e0cf3111-44ae-4ec7-9f50-bef09ad44c98",
-                "createdAt": "2020-10-17T18:30:05.353000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "b2ec5a42-c479-4041-9b08-b265421a33d0",
-                "createdAt": "2020-10-17T18:27:56.630000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task a76ae27d-ed10-4743-800b-891205882ddc)."
-            },
-            {
-                "id": "dcb5d456-ddb3-4d05-8923-356fa7cf7807",
-                "createdAt": "2020-10-17T14:37:54.855000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "0031ae23-308b-42d8-9043-30954f1450ef",
-                "createdAt": "2020-10-17T08:37:39.007000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "b477eafe-9330-4a9d-844d-0dff0a112655",
-                "createdAt": "2020-10-17T08:36:57.750000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 08407eda-183b-4e4d-a97c-4b4093128135)."
-            },
-            {
-                "id": "06952903-1371-43a9-a53d-307b15b2bd72",
-                "createdAt": "2020-10-17T03:12:27.704000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "e4d7bd86-a29a-4910-af6b-0f63641d7213",
-                "createdAt": "2020-10-16T21:12:11.895000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "370c897a-91ee-46cd-b49f-37767a87f3bb",
-                "createdAt": "2020-10-16T21:11:29.921000+05:30",
-                "message": "(service f-srv-automated-builder) has stopped 1 running tasks: (task 9aa8d16b-4b17-45cd-88b8-c629181d8116)."
-            },
-            {
-                "id": "7ff066c2-6233-489a-9a3c-cbe44b6d8d4b",
-                "createdAt": "2020-10-16T21:08:50.311000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 08407eda-183b-4e4d-a97c-4b4093128135)."
-            },
-            {
-                "id": "99181bd0-d613-4c9a-8c07-cbdc531816dd",
-                "createdAt": "2020-10-16T21:07:24.933000+05:30",
-                "message": "(service f-srv-automated-builder) has reached a steady state."
-            },
-            {
-                "id": "e59a3316-d1dc-430a-b8c9-7e5f4fec6ab2",
-                "createdAt": "2020-10-16T21:05:34.892000+05:30",
-                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 9aa8d16b-4b17-45cd-88b8-c629181d8116)."
+                "id": "a16b653c-f737-4cb0-9dc5-95ceed9ff65f",
+                "createdAt": "2020-10-26T11:02:06.190000+05:30",
+                "message": "(service f-srv-automated-builder) has started 1 tasks: (task 74132f239bae43c497ea8805794c5bc5)."
             }
         ],
         "createdAt": "2020-10-16T21:05:26.302000+05:30",

@@ -1,0 +1,572 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:356567610291:service/travel-plan-app-env-prod/f-srv-travel-elastic-search",
+        "serviceName": "f-srv-travel-elastic-search",
+        "clusterArn": "arn:aws:ecs:us-east-1:356567610291:cluster/travel-plan-app-env-prod",
+        "loadBalancers": [],
+        "serviceRegistries": [
+            {
+                "registryArn": "arn:aws:servicediscovery:us-east-1:356567610291:service/srv-dwmfsahvrxqby4xc"
+            }
+        ],
+        "status": "ACTIVE",
+        "desiredCount": 0,
+        "runningCount": 0,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "1.4.0",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-elastic-search:3",
+        "deploymentConfiguration": {
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/9345263502567628085",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-travel-plan-elastic-search:3",
+                "desiredCount": 0,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "createdAt": "2020-10-26T11:41:04.770000+05:30",
+                "updatedAt": "2020-10-26T18:40:08.479000+05:30",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-059c84b8e1f278362",
+                            "subnet-00b8ca42ec54c8155"
+                        ],
+                        "securityGroups": [
+                            "sg-009c06cea7b054292"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                }
+            }
+        ],
+        "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "fe011da5-dcb8-48b0-8025-74fdd192935c",
+                "createdAt": "2020-10-27T18:41:49.628000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "6eac334c-459c-4d7d-820a-32c3371244e4",
+                "createdAt": "2020-10-27T12:41:34.177000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "edaecd5e-d3b0-4519-ade3-5f0e848e2c37",
+                "createdAt": "2020-10-27T06:41:06.987000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "05966bfd-d18b-48f5-9a89-57776bba259e",
+                "createdAt": "2020-10-27T00:40:34.900000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "90b828a5-5514-4b4c-87f4-8f6b464198c7",
+                "createdAt": "2020-10-26T18:40:08.484000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "86c58f44-37f2-4411-bf7b-5e57fd41d9b2",
+                "createdAt": "2020-10-26T18:39:56.651000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has stopped 1 running tasks: (task 2316f69aef364466970ef65b1d613fc5)."
+            },
+            {
+                "id": "29079e0b-6732-49c7-bff7-ca5a1c68eaf3",
+                "createdAt": "2020-10-26T17:43:45.550000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "055d9034-d7ac-4a48-a91d-e14372e1fdcb",
+                "createdAt": "2020-10-26T11:43:28.509000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "0e078519-d76b-4345-89d9-aa4fd1acf0ea",
+                "createdAt": "2020-10-26T11:41:10.886000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 2316f69aef364466970ef65b1d613fc5)."
+            },
+            {
+                "id": "2c9567f3-4b97-480c-a547-6140dd5f0d15",
+                "createdAt": "2020-10-26T11:41:10.469000+05:30",
+                "message": "(service f-srv-travel-elastic-search) stopped 1 pending tasks."
+            },
+            {
+                "id": "37966c30-e555-4a9d-ae7f-bab504a7f4fb",
+                "createdAt": "2020-10-26T11:40:41.190000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 1308787b27bf4ab2ab56f383db1f8bd8)."
+            },
+            {
+                "id": "4f5e9282-e02f-453a-95cf-3acfa4bcd8f4",
+                "createdAt": "2020-10-26T11:39:37.435000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "3f489daf-4e07-4050-a4b5-9be51682a3d5",
+                "createdAt": "2020-10-26T11:37:26.848000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 4a510ea8d9874da8961a0e0f927e7ec8)."
+            },
+            {
+                "id": "a0850329-4394-4bb6-91cd-de0f58351e0a",
+                "createdAt": "2020-10-26T11:36:23.017000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "9d660ebb-8c7c-4357-8586-0264cdb3c777",
+                "createdAt": "2020-10-26T11:33:53.110000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task a3fdcd548bdb49d2b4f55a6686706203)."
+            },
+            {
+                "id": "b26e7c38-1cbd-495e-99ea-7e5f275c1d84",
+                "createdAt": "2020-10-26T11:32:47.734000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "86af8842-e4b4-4f39-add1-7b59e7ac479f",
+                "createdAt": "2020-10-26T11:30:18.988000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 32b28d36a66f49b89c6e51c5b520a928)."
+            },
+            {
+                "id": "44dd0dca-443d-4017-b34a-cd93aa65067a",
+                "createdAt": "2020-10-26T11:28:41.809000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "bbe7be24-c07b-4301-b871-b632acbe2697",
+                "createdAt": "2020-10-26T11:26:31.158000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 2d233ff0d8844751b297209d650b76be)."
+            },
+            {
+                "id": "e4ed926c-1180-4767-9e1d-c45530e9d765",
+                "createdAt": "2020-10-26T11:25:25.769000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "c101494e-778a-433c-b76f-1a04b6abd5b7",
+                "createdAt": "2020-10-26T11:23:06.418000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task c5c18a9226524b86bb0cc7763d41410c)."
+            },
+            {
+                "id": "d825fd40-f507-47a2-9820-910b26546251",
+                "createdAt": "2020-10-26T11:20:57.467000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "bd2d5144-5ce0-422b-b532-bdc5fcb1f9e9",
+                "createdAt": "2020-10-26T11:19:07.178000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 63ea54293c7e4fa5b68e59179b5c2203)."
+            },
+            {
+                "id": "94c88ea1-afba-435f-ab6d-c749b0a178ba",
+                "createdAt": "2020-10-26T11:18:06.957000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "d97527f2-7616-4807-9097-2b60e56ffe31",
+                "createdAt": "2020-10-26T11:15:46.155000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task c6e045e9fd8c46a38410fd3612814891)."
+            },
+            {
+                "id": "fea515b6-0638-4d3c-998d-d0a93a278258",
+                "createdAt": "2020-10-26T11:14:41.880000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "38dc6360-b7c7-4fc0-bb18-58c561b545c2",
+                "createdAt": "2020-10-26T11:12:23.847000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 57c19d928ba64947a9a4313ed6ec296a)."
+            },
+            {
+                "id": "0261c57a-0bbc-4f08-901b-e980850b6205",
+                "createdAt": "2020-10-26T11:11:21.182000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "1dac602c-6be5-4cca-a3b4-9c6b6f08cb43",
+                "createdAt": "2020-10-26T11:08:59.676000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task cdbcbe0e49404d29b2d151d7b723806f)."
+            },
+            {
+                "id": "3bde5b6f-e1e8-4ec8-9e98-2818b4813ac0",
+                "createdAt": "2020-10-26T11:07:29.565000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task f2df8b8f529846529507acccd8d504ee)."
+            },
+            {
+                "id": "a6c366a2-ef15-4881-8197-402d669bab64",
+                "createdAt": "2020-10-26T11:06:25.435000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "328597fc-c327-48a3-9a92-a27f45ad63ed",
+                "createdAt": "2020-10-26T11:04:05.895000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 735e9d1884cb4dbdafe0a14c81c387e7)."
+            },
+            {
+                "id": "93716c0d-37e5-48ff-aea1-9fdf1549c51b",
+                "createdAt": "2020-10-26T11:02:59.775000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "51f4e775-fee7-46d7-823e-fd313b8b6d99",
+                "createdAt": "2020-10-26T11:00:40.255000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 2e86a4c99f594b779f983cdd38668a55)."
+            },
+            {
+                "id": "51ff3893-b267-406e-b693-4360268cabfc",
+                "createdAt": "2020-10-26T10:59:35.431000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "e39c9a4a-fbca-4767-84cd-89c364ea894c",
+                "createdAt": "2020-10-26T10:57:15.013000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task fe07e560ac66441b9d1c77b8ca0ad7f4)."
+            },
+            {
+                "id": "9983be35-fecc-4917-b15c-053205d7642b",
+                "createdAt": "2020-10-26T10:56:10.082000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "c7826186-f174-41fc-b977-081d1052347a",
+                "createdAt": "2020-10-26T10:53:22.022000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 0f46fff10e1b409e981c05c8df099fb4)."
+            },
+            {
+                "id": "4bba565a-4c75-4de3-8c81-28455b1d0f66",
+                "createdAt": "2020-10-26T10:52:15.546000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "99fd698e-93ba-4030-8276-0e30b8313be1",
+                "createdAt": "2020-10-26T10:49:46.564000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task be4679672cff408487cc34d5052126fd)."
+            },
+            {
+                "id": "88f3028d-c698-43cd-8400-a85a32a91c11",
+                "createdAt": "2020-10-26T10:48:41.463000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "26ce2a7b-4182-4e7a-b2a5-6b783edf3e85",
+                "createdAt": "2020-10-26T10:46:27.715000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task a657cae26f934b18af05b0118216f213)."
+            },
+            {
+                "id": "bfb06590-4e74-457c-8c2c-a231863e7635",
+                "createdAt": "2020-10-26T10:45:26.749000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "54e4e1db-be5e-43f0-8da7-e2e4ffebe4dd",
+                "createdAt": "2020-10-26T10:42:47.778000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task ad0fc504db79432c9dd5415ce8ca8013)."
+            },
+            {
+                "id": "cae9022b-3708-41f6-8f5b-6855fbcb9147",
+                "createdAt": "2020-10-26T10:41:11.160000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "e05ae9b4-ff32-4c1d-a0a5-64d85a4778ce",
+                "createdAt": "2020-10-26T10:39:00.977000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task b7c8a3e60d4f4b71aca59e4b63697879)."
+            },
+            {
+                "id": "4a7130b5-9484-4719-9f89-98481b1dbc97",
+                "createdAt": "2020-10-26T10:37:57.093000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "ce2b2901-0ac7-4875-beb6-55c690486d77",
+                "createdAt": "2020-10-26T10:35:38.309000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task baf7686cd8ca4dfb9abf84bd3795244e)."
+            },
+            {
+                "id": "efb77ca2-083e-46f9-ab35-98587c9f4d0f",
+                "createdAt": "2020-10-26T10:34:03.359000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "e9acbc60-934d-4eff-9efd-4c2222ed2502",
+                "createdAt": "2020-10-26T10:31:51.862000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 1b12148ce14c4e2ba3f64408bd9664f7)."
+            },
+            {
+                "id": "20155fda-f0d8-4d95-b832-462a61d570b8",
+                "createdAt": "2020-10-26T10:30:47.216000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "1593dcd5-3c99-497e-8fe5-f343612a9829",
+                "createdAt": "2020-10-26T10:28:36.470000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 94b70a21ac114d089a0f24728cb808e0)."
+            },
+            {
+                "id": "7b841a38-0877-4d15-b307-27a6d5043555",
+                "createdAt": "2020-10-26T10:27:33.184000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "3e886227-88d8-406b-876d-d6733a3e77d0",
+                "createdAt": "2020-10-26T10:24:54.547000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task fbc489a946b14d998526a12db3535a26)."
+            },
+            {
+                "id": "636a30f0-7003-487f-abe4-63ddc5ad3015",
+                "createdAt": "2020-10-26T10:23:49.284000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "7b0648b0-71dd-437c-8a27-a5703e9d85fc",
+                "createdAt": "2020-10-26T10:21:39.179000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task d433977dfde744c5890a4a026308d953)."
+            },
+            {
+                "id": "a1aec9b3-3c03-4abf-b9ad-c41d4eb80f61",
+                "createdAt": "2020-10-26T10:20:32.117000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "e2437650-3cd3-497d-b62b-14a7c41df334",
+                "createdAt": "2020-10-26T10:18:12.874000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 5964545968d54804b56eef56e0274908)."
+            },
+            {
+                "id": "a85ab540-92b3-4503-b15a-04c3a24d652a",
+                "createdAt": "2020-10-26T10:17:07.955000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "f7447c3e-6982-4cb3-ac44-67efeee1f943",
+                "createdAt": "2020-10-26T10:14:47.206000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 06911f870ea74765b05424c5c0347207)."
+            },
+            {
+                "id": "43123cce-e681-4242-9767-15d13cd63dbd",
+                "createdAt": "2020-10-26T10:13:43.629000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "125d4cd0-a7a1-44fe-8f7d-55b5fb7b740d",
+                "createdAt": "2020-10-26T10:11:05.817000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 31dadd5d5a2a4be5b38cce6cb877a9de)."
+            },
+            {
+                "id": "c8ccc11f-796f-4731-836f-60fac1212bd0",
+                "createdAt": "2020-10-26T10:10:01.670000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "c43c707d-7760-4eca-a18d-5d3bd51c21b7",
+                "createdAt": "2020-10-26T10:07:42.188000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 2167123e103b4ab5a083daed29cbefbb)."
+            },
+            {
+                "id": "27e3a7de-da52-41f2-aa47-aeb1800a02ef",
+                "createdAt": "2020-10-26T10:06:39.653000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "d3f29bf7-2601-4b2e-8c1a-de7ded88ff0b",
+                "createdAt": "2020-10-26T10:04:19.457000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 746a42bf1953451ab578812420c763ab)."
+            },
+            {
+                "id": "5f1354ce-ce6a-45a8-8242-639618e547e4",
+                "createdAt": "2020-10-26T10:02:51+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 702f93c7e5b7459cada9f974cff06361)."
+            },
+            {
+                "id": "b26cb4a3-46b1-4282-8fb1-136aa57301ed",
+                "createdAt": "2020-10-26T10:01:46.154000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "6232faf7-ef13-4bbf-bc91-3a586079308c",
+                "createdAt": "2020-10-26T09:59:06.346000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 3ba515e5f8014a1498f73ddde85d92e3)."
+            },
+            {
+                "id": "8063e234-56fa-486f-89f9-33bac0408edd",
+                "createdAt": "2020-10-26T09:58:01.014000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "45d66887-4e18-4a83-a502-c4e7c6541731",
+                "createdAt": "2020-10-26T09:55:41.516000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task b7be60fa311242588b9c5b11eafb7f38)."
+            },
+            {
+                "id": "e8778182-32b1-4478-9a69-348aa65ebfe3",
+                "createdAt": "2020-10-26T09:54:04.932000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "83e3eda0-8161-49e5-957c-1718d2881991",
+                "createdAt": "2020-10-26T09:52:15.682000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 6304a4e2e9484dcda0a3fe1303c3d7b4)."
+            },
+            {
+                "id": "bc2e45cc-8082-4f49-98e9-0a66854ff372",
+                "createdAt": "2020-10-26T09:50:43.133000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "436bbe6a-6c88-4dd9-9f9f-a35ef3c54875",
+                "createdAt": "2020-10-26T09:48:25.506000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 52a362c09fd844a2a0e237daec46b685)."
+            },
+            {
+                "id": "05a7c977-2be0-4382-b971-6986457db942",
+                "createdAt": "2020-10-26T09:47:23.283000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "8ddf2dad-ce1f-46dc-9a35-bd90857022e2",
+                "createdAt": "2020-10-26T09:45:03.375000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 0f0e774fb707442495783569b3ed95bd)."
+            },
+            {
+                "id": "8f9f4250-bf48-43d9-b95f-c24baa39112e",
+                "createdAt": "2020-10-26T09:43:23.865000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "19069b74-778a-4a02-aff1-092c8d39ce00",
+                "createdAt": "2020-10-26T09:41:05.415000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 5f4aa1bed31a451a931e82a36a2e4da5)."
+            },
+            {
+                "id": "2207d94b-4f04-40ed-b1f4-f91a321c231c",
+                "createdAt": "2020-10-26T09:40:00.270000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "c78efc0d-0530-429d-a376-ab2569d024a7",
+                "createdAt": "2020-10-26T09:37:20.884000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 4f9267227a444c6f8626687b3c938d7e)."
+            },
+            {
+                "id": "b930d9d7-dbdc-4ce9-b7db-d6b115b34dc9",
+                "createdAt": "2020-10-26T09:36:01.054000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task b1c27313f502415c808f448e749baafe)."
+            },
+            {
+                "id": "3aec5407-654c-4c6f-a4c6-36f4ea52ee87",
+                "createdAt": "2020-10-26T09:34:55.163000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "3158ed8f-65ac-4ea9-b43f-a1b7b55f08e0",
+                "createdAt": "2020-10-26T09:32:16.367000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 67faf342755d460bbc05139babe89d34)."
+            },
+            {
+                "id": "8a0511c8-dc5c-4b83-8426-0408f99300f7",
+                "createdAt": "2020-10-26T09:31:12.735000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "b03cce94-f8a3-4183-be94-b00bde71ab16",
+                "createdAt": "2020-10-26T09:28:44.003000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task f9622806026046a583cf9c76f84b51bc)."
+            },
+            {
+                "id": "5e24c540-9635-46e6-8df6-2b7f160734c8",
+                "createdAt": "2020-10-26T09:27:42.077000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "653b93eb-b385-42da-b80a-c559ed3429dc",
+                "createdAt": "2020-10-26T09:25:20.932000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task c27b0be003534cf1bccc7426c699974e)."
+            },
+            {
+                "id": "f215f98d-5e11-428c-ba28-5e57c0035e8c",
+                "createdAt": "2020-10-26T09:24:17.017000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "59ce5588-870e-459b-bff5-dfd714048fe5",
+                "createdAt": "2020-10-26T09:22:04.468000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task b9fd7acaccdf4713ba4410639ca4f473)."
+            },
+            {
+                "id": "818f6f84-5132-4289-acd8-7a1fd34accb9",
+                "createdAt": "2020-10-26T09:20:34.951000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task fa579c55df114331b8dddf43ddb6a8fd)."
+            },
+            {
+                "id": "45d09d6a-b9db-497f-a9d7-11cf9298d8df",
+                "createdAt": "2020-10-26T09:19:30.317000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "a3e89dad-afd5-4e2e-ae82-76f27038ff84",
+                "createdAt": "2020-10-26T09:17:11.906000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task d987c5154bed4193acac64bef0ba129f)."
+            },
+            {
+                "id": "ad8e05fb-e632-407d-a089-bb816fa40146",
+                "createdAt": "2020-10-26T09:16:06.738000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "85d530eb-0bfa-4888-9532-669e252dfd7c",
+                "createdAt": "2020-10-26T09:13:27.036000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 6c6b9c7996cd4ef48a0ce7a74b341d70)."
+            },
+            {
+                "id": "0e953a8b-ab25-469c-8538-ab335dcee874",
+                "createdAt": "2020-10-26T09:12:20.790000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "57939826-ecfe-4cfa-bad2-7ff0ff8cd6d5",
+                "createdAt": "2020-10-26T09:09:50.283000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task f1ece4080f2e4101a97fb1cd82ab4e79)."
+            },
+            {
+                "id": "b169445a-b89c-40f2-909e-bd086d60b704",
+                "createdAt": "2020-10-26T09:08:47.075000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            },
+            {
+                "id": "426e3410-3580-475e-ad59-dee46f8603cc",
+                "createdAt": "2020-10-26T09:06:27.945000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has started 1 tasks: (task 6e9d8955fc5c4b49907cb6feee796c5d)."
+            },
+            {
+                "id": "8b837239-2fe1-4b3d-839f-544eb0a3a1e7",
+                "createdAt": "2020-10-26T09:04:51.535000+05:30",
+                "message": "(service f-srv-travel-elastic-search) has reached a steady state."
+            }
+        ],
+        "createdAt": "2020-10-22T16:26:06.390000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-059c84b8e1f278362",
+                    "subnet-00b8ca42ec54c8155"
+                ],
+                "securityGroups": [
+                    "sg-009c06cea7b054292"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "schedulingStrategy": "REPLICA",
+        "createdBy": "arn:aws:iam::356567610291:root",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE"
+    }
+}

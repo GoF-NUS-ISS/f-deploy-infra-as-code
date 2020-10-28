@@ -10,26 +10,26 @@
             }
         ],
         "status": "ACTIVE",
-        "desiredCount": 1,
+        "desiredCount": 0,
         "runningCount": 0,
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
-        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:3",
+        "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:6",
         "deploymentConfiguration": {
             "maximumPercent": 200,
             "minimumHealthyPercent": 100
         },
         "deployments": [
             {
-                "id": "ecs-svc/6592819208555859185",
+                "id": "ecs-svc/4860095136893926837",
                 "status": "PRIMARY",
-                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:3",
-                "desiredCount": 1,
+                "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-redis-api:6",
+                "desiredCount": 0,
                 "pendingCount": 0,
                 "runningCount": 0,
-                "createdAt": "2020-10-20T14:04:02.672000+05:30",
-                "updatedAt": "2020-10-22T20:24:09.475000+05:30",
+                "createdAt": "2020-10-26T17:02:19.035000+05:30",
+                "updatedAt": "2020-10-26T18:39:47.046000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -48,6 +48,166 @@
         ],
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
+            {
+                "id": "f6df3db5-09e1-4fed-96f0-0ad3044cefe3",
+                "createdAt": "2020-10-27T18:40:54.845000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "c723fb5f-7a5e-4357-a3ea-9e6592e50ae1",
+                "createdAt": "2020-10-27T12:40:45.689000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "c0ee7d5a-efe9-486f-8562-43fc19321ba1",
+                "createdAt": "2020-10-27T06:40:15.680000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "1a4ed2d6-1faa-4af7-8907-d5a9f894348e",
+                "createdAt": "2020-10-27T00:40:13.361000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "93a9a7e3-46f7-4be9-923c-a14f5ad3963e",
+                "createdAt": "2020-10-26T18:39:47.053000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "75e0872d-e06f-4a6f-b9ba-2bb64e2a93e7",
+                "createdAt": "2020-10-26T18:39:34.928000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task f0635550cc684454b98e635bd3059caa)."
+            },
+            {
+                "id": "685e2793-86d6-4aae-b331-1243b9987632",
+                "createdAt": "2020-10-26T17:05:10.594000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "85f020b3-b786-4ef0-9a62-24ba8d51b6ad",
+                "createdAt": "2020-10-26T17:04:30.049000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task 4cbfd97a99bf416eb8d602a76cc5275a)."
+            },
+            {
+                "id": "c9aea8e0-c689-4e18-b9a9-3de4a926699f",
+                "createdAt": "2020-10-26T17:02:21.758000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task f0635550cc684454b98e635bd3059caa)."
+            },
+            {
+                "id": "7b1548f4-97d6-40e0-9499-2248b7ad5d02",
+                "createdAt": "2020-10-26T15:19:04.761000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "d356f99c-b626-44ab-a2b5-083b704761ee",
+                "createdAt": "2020-10-26T15:18:24.723000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task 2b9608ae586945bfb1d97c84006f0d66)."
+            },
+            {
+                "id": "c87981c9-176a-4195-8e56-c459859dc8cf",
+                "createdAt": "2020-10-26T15:16:47.922000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task 4cbfd97a99bf416eb8d602a76cc5275a)."
+            },
+            {
+                "id": "33e5c516-9742-413b-813f-fa0f44e73b85",
+                "createdAt": "2020-10-26T14:47:50.808000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "a5888fc1-fa1d-4e66-9b63-8d22391370c6",
+                "createdAt": "2020-10-26T14:47:09.146000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task eaca42352983481790bfb9b119df5960)."
+            },
+            {
+                "id": "5b0bfa15-0ac5-4bd7-9eb4-4dd92e83e8ed",
+                "createdAt": "2020-10-26T14:45:02.798000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task 2b9608ae586945bfb1d97c84006f0d66)."
+            },
+            {
+                "id": "a0d0d901-9ab6-4d56-8935-ccd71a0a9173",
+                "createdAt": "2020-10-26T14:42:20.959000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "a71008b8-d48d-4e13-9f50-217ee7ff1ce0",
+                "createdAt": "2020-10-26T08:41:56.313000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "331692ea-fa94-4a01-b9f3-5b569a1acbac",
+                "createdAt": "2020-10-26T08:40:08.128000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task eaca42352983481790bfb9b119df5960)."
+            },
+            {
+                "id": "e11ad8b4-0479-4d3e-b225-dd0848efe562",
+                "createdAt": "2020-10-26T05:02:24.346000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "34ba59ee-c3a3-48f0-8f46-7962015330a6",
+                "createdAt": "2020-10-25T23:02:10.508000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "aaeb68c6-bfee-4d49-8b97-3546baf75014",
+                "createdAt": "2020-10-25T17:01:46.772000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "c410f0f6-fc1a-4e9c-9d87-2e94c81cc4d5",
+                "createdAt": "2020-10-25T11:01:33.157000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "05a9711c-3408-4951-bed8-82cd6932e6e3",
+                "createdAt": "2020-10-25T05:01:11.042000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "f9082ad8-5091-4b05-abea-72630738b3ec",
+                "createdAt": "2020-10-24T23:01:08.337000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "8cc24dbf-27ae-4750-9e5a-49a91ce0fc95",
+                "createdAt": "2020-10-24T17:00:44.818000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "42c0c834-53da-434c-90b4-fbe1d8c7ad41",
+                "createdAt": "2020-10-24T11:00:30.352000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "c89ae3a4-de47-457c-bdf1-32105d209ac8",
+                "createdAt": "2020-10-24T05:00:29.152000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "7081582c-c17c-4d30-9709-f795b1b1fd80",
+                "createdAt": "2020-10-23T23:00:06.349000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "7c5f7bed-c869-4de9-aa36-9177848a0619",
+                "createdAt": "2020-10-23T22:59:55.903000+05:30",
+                "message": "(service f-srv-redis) has stopped 1 running tasks: (task acfebc2ec3a645a1afcad4d8d4c47fbb)."
+            },
+            {
+                "id": "0ffcbb9c-2879-4065-844b-82333a0d8707",
+                "createdAt": "2020-10-23T22:12:31.629000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "3bd606a5-1e8d-4aea-9c9e-f95654038275",
+                "createdAt": "2020-10-23T16:12:08.870000+05:30",
+                "message": "(service f-srv-redis) has reached a steady state."
+            },
+            {
+                "id": "71a013bd-f607-4206-b777-2c792bd36b4e",
+                "createdAt": "2020-10-23T16:10:36.417000+05:30",
+                "message": "(service f-srv-redis) has started 1 tasks: (task acfebc2ec3a645a1afcad4d8d4c47fbb)."
+            },
             {
                 "id": "badd22b2-da7e-4c0a-bbb4-90267b094b77",
                 "createdAt": "2020-10-23T14:24:39.871000+05:30",

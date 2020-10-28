@@ -10,8 +10,8 @@
             }
         ],
         "status": "ACTIVE",
-        "desiredCount": 1,
-        "runningCount": 0,
+        "desiredCount": 0,
+        "runningCount": 1,
         "pendingCount": 0,
         "launchType": "FARGATE",
         "platformVersion": "1.4.0",
@@ -25,11 +25,11 @@
                 "id": "ecs-svc/4292039961341861860",
                 "status": "PRIMARY",
                 "taskDefinition": "arn:aws:ecs:us-east-1:356567610291:task-definition/f-task-def-mongodb-api:3",
-                "desiredCount": 1,
+                "desiredCount": 0,
                 "pendingCount": 0,
-                "runningCount": 0,
+                "runningCount": 1,
                 "createdAt": "2020-10-19T18:30:23.938000+05:30",
-                "updatedAt": "2020-10-22T20:24:26.675000+05:30",
+                "updatedAt": "2020-10-27T15:20:59.617000+05:30",
                 "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "networkConfiguration": {
@@ -48,6 +48,131 @@
         ],
         "roleArn": "arn:aws:iam::356567610291:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
+            {
+                "id": "6a9713bf-9249-4c96-8af1-961775d5f4da",
+                "createdAt": "2020-10-27T15:20:59.621000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "555ef04f-a1c0-4bfe-8096-5528df490f4d",
+                "createdAt": "2020-10-27T15:18:42.329000+05:30",
+                "message": "(service f-srv-mongo) has started 1 tasks: (task 99472779eb8c4591af9f0ee6261c6af1)."
+            },
+            {
+                "id": "73a8325a-6523-45ee-9612-f31bd5a9cce2",
+                "createdAt": "2020-10-27T12:40:42.903000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "b53cb666-64f9-474c-9d33-0d1559c7f9de",
+                "createdAt": "2020-10-27T06:40:32.096000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "39f83b49-cc0d-46d7-84ee-cc347757597d",
+                "createdAt": "2020-10-27T00:40:19.440000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "a46b6211-06ea-4bdb-81a0-834bc2bef501",
+                "createdAt": "2020-10-26T18:39:48.730000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "72e569f6-a84a-4c8a-beb9-c539318236f1",
+                "createdAt": "2020-10-26T18:39:36.538000+05:30",
+                "message": "(service f-srv-mongo) has stopped 1 running tasks: (task d01a15e809bc422f9c957dc3be888d3f)."
+            },
+            {
+                "id": "77533220-d40a-4721-8b09-3a8cd2271b78",
+                "createdAt": "2020-10-26T14:43:41.196000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "3a1a51d9-ce6d-4164-b083-1d14ede69d0c",
+                "createdAt": "2020-10-26T08:43:30.811000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "29323a78-cb05-46d3-90e7-fc808dbf4650",
+                "createdAt": "2020-10-26T08:41:14.822000+05:30",
+                "message": "(service f-srv-mongo) has started 1 tasks: (task d01a15e809bc422f9c957dc3be888d3f)."
+            },
+            {
+                "id": "f78bed6a-a5dc-43d0-8d40-6a4dbb51da89",
+                "createdAt": "2020-10-26T08:40:04.104000+05:30",
+                "message": "(service f-srv-mongo) has started 1 tasks: (task f43e36d0ff04492d87dca610233e7964)."
+            },
+            {
+                "id": "83860b31-f471-4c9e-9983-ad6b3135bcc0",
+                "createdAt": "2020-10-26T05:01:59.333000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "3a61e0a7-ebd2-470c-be03-1437b1a42f99",
+                "createdAt": "2020-10-25T23:01:37.564000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "01eb2221-20af-470c-995e-4d2cf84f269d",
+                "createdAt": "2020-10-25T17:01:15.620000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "c53e74f9-f38e-4f85-bc77-e8d41789f449",
+                "createdAt": "2020-10-25T11:01:02.294000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "7a64e479-7497-46c2-8002-d9c539aea6b9",
+                "createdAt": "2020-10-25T05:00:50.758000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "bf847543-da17-4cb9-ada8-8f87a67d6445",
+                "createdAt": "2020-10-24T23:00:45.693000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "e5505a51-f113-4659-a054-d9f700f215dc",
+                "createdAt": "2020-10-24T17:00:24.905000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "448b9861-6fe4-4142-b4d7-1d8e1a5b7154",
+                "createdAt": "2020-10-24T11:00:13.392000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "0ed19707-d393-4de6-9f74-be4e7c9a260a",
+                "createdAt": "2020-10-24T04:59:58.661000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "e31207a2-5bc8-48b1-80ed-d1c73b0b8543",
+                "createdAt": "2020-10-23T22:59:56.349000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "bba664e9-0765-4a29-8689-af51f6e3f518",
+                "createdAt": "2020-10-23T22:59:45.026000+05:30",
+                "message": "(service f-srv-mongo) has stopped 1 running tasks: (task f08353a6168840c8b47c2c00d0847f1c)."
+            },
+            {
+                "id": "6d5c2b90-b4c1-405d-ba32-c87bdc253cb4",
+                "createdAt": "2020-10-23T22:12:45.079000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "cd7af43f-b0fb-444f-8273-4574176c5edf",
+                "createdAt": "2020-10-23T16:12:35.985000+05:30",
+                "message": "(service f-srv-mongo) has reached a steady state."
+            },
+            {
+                "id": "d4c7f92e-ed37-4c05-b649-b7cfa3dc0a3b",
+                "createdAt": "2020-10-23T16:10:34.876000+05:30",
+                "message": "(service f-srv-mongo) has started 1 tasks: (task f08353a6168840c8b47c2c00d0847f1c)."
+            },
             {
                 "id": "58f06384-94ea-4894-b300-e8e4c1c813eb",
                 "createdAt": "2020-10-23T14:25:24.963000+05:30",
